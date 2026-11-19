@@ -108,7 +108,7 @@ for k, en, uk in [
   '<code>textures\\&lt;хеш&gt;.dds</code> або <code>.png</code>, сумісно з паками для DPfix. <code>[Debug] DumpTextures=1</code> скидає всі текстури з назвою-хешем.'),
  ('keys.eyebrow', 'CONTROLS', 'КЛАВІШІ'), ('keys.title', 'Keys worth knowing', 'Клавіші, які варто знати'),
  ('faq.eyebrow', 'QUESTIONS', 'ПИТАННЯ'), ('faq.title', 'Before you ask', 'Часті питання'),
- ('cta.title', 'Greenvale is waiting', 'Грінвейл чекає'),
+ ('cta.title', 'Greenvale is waiting', 'Ґрінвейл чекає'),
  ('cta.text', 'Free, open source, one file. Agent York would approve.', 'Безкоштовно, відкритий код, один файл. Агент Йорк схвалив би.'),
  ('cta.issue', 'Report a problem', 'Повідомити про проблему'),
 ]:
