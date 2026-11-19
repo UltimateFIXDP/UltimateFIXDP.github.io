@@ -143,3 +143,45 @@ tree = ('<pre class="tree"><span class="t-dim">Deadly Premonition The Director\'
         '         ├─ mod.ini\n'
         '         └─ textures\\\n'
         '            └─ 1a2b3c4d.dds</pre>')
+
+
+# ---- texts of the calm design (2026-11-19) ----
+for k, en, uk in [
+ ('hero.pill', 'Version 0.7.0 · mod manager, HBAO, 180 FPS', 'Версія 0.7.0 · менеджер модів, HBAO, 180 FPS'),
+ ('hero.title', 'Deadly Premonition,<br>the way it should have been', 'Deadly Premonition,<br>якою вона мала бути'),
+ ('hero.lead', "One file in the game folder instead of five mods. Stability, up to 180 FPS, your monitor's resolution and a full settings menu on F10.",
+  "Один файл у теці гри замість п'яти модів. Стабільність, до 180 FPS, роздільність вашого монітора й повне меню налаштувань на F10."),
+ ('hero.dl', 'Download for Windows', 'Завантажити для Windows'),
+ ('hero.code', 'Code on GitHub', 'Код на GitHub'),
+ ('hero.meta', 'Steam 1.01b · free, MIT · UA + EN', 'Steam 1.01b · безкоштовно, MIT · UA + EN'),
+ ('nav.download', 'Download', 'Завантажити'),
+ ('nav.compare', 'Before and after', 'До і після'),
+ ('s2.fps', 'and the car and timers run right', 'а машина й таймери йдуть нормально'),
+ ('s2.dll', 'instead of DPfix and four other fixes', 'замість DPfix і чотирьох інших фіксів'),
+ ('s2.saves', 'named save backups', 'підписаних резервних копій сейвів'),
+ ('s2.files', 'game files changed on disk', 'змінених файлів гри на диску'),
+ ('f2.title', 'Everything the PC version was missing', 'Усе, чого бракувало PC-версії'),
+ ('f2.lead', 'Every fix comes from taking the game\'s code apart and comparing it with the Xbox 360 original.',
+  'Кожне виправлення — з розбору коду гри й порівняння з оригіналом для Xbox 360.'),
+ ('e2.title', 'Fixed at the root', 'Виправлено в корені'),
+ ('n2.title', "What's new in 0.7.0", 'Що нового в 0.7.0'),
+ ('c2.title', 'Before and after', 'До і після'),
+ ('c2.lead', 'What changes in the PC port once UltimateFIXDP is in the game folder.', "Що змінюється в PC-порті, щойно в теці гри з'являється UltimateFIXDP."),
+ ('m2.title', 'Mods without instructions', 'Моди без інструкцій'),
+ ('m2.lead', "Put a folder into <code>UltimateFix\\mods\\</code> and switch it on in F10 → Mods. The game's files stay as they are: everything is replaced in memory.",
+  "Покладіть теку в <code>UltimateFix\\mods\\</code> і ввімкніть її в F10 → Моди. Файли гри не змінюються: усе підміняється в пам'яті."),
+ ('sh2.title', 'One menu for everything', 'Одне меню для всього'),
+ ('i2.title', 'Install in a minute', 'Установка за хвилину'),
+ ('k2.title', 'Keys', 'Клавіші'),
+ ('q2.title', 'Questions', 'Питання'),
+ ('cr2.title', 'Thanks to', 'Дякуємо'),
+ ('cta2.title', 'Greenvale is waiting', 'Ґрінвейл чекає'),
+ ('cta2.text', 'Free, open source, one file.', 'Безкоштовно, відкритий код, один файл.'),
+]:
+    T[k] = (en, uk)
+
+STATS2 = [('180 FPS', 's2.fps'), ('1 DLL', 's2.dll'), ('60', 's2.saves'), ('0', 's2.files')]
+stats2 = '\n'.join('      <div class="stat2 reveal"><div class="stat2-num">%s</div>%s</div>' % (n, txt(k, 'div', ' class="stat2-label"', False)) for n, k in STATS2)
+compare = '\n'.join('      <div class="cmp-row"><span class="cmp-old">%s</span><span class="cmp-new">%s</span></div>'
+                    % (txt(a, 'span', '', False), txt(b, 'span', '', False)) for a, b in BEFORE)
+news2 = '\n'.join('      <li class="news2 reveal">%s%s</li>' % (txt(tk, 'h3', '', False), txt(dk, 'p')) for tk, dk in NEWS)
