@@ -94,7 +94,6 @@ CREDITS = [
  ('CrashFix · MapFix · FreeCam', 'Behelit09', 'https://github.com/Behelit09', t('c.beh', 'Navigation crash, the full map, free camera', 'Виліт навігації, повна мапа, вільна камера')),
  ('DPRecomp', '«Little Bit»', 'https://github.com/LittleBitUA/DPRecomp', t('c.recomp', 'Our Xbox 360 recompilation: the reference the PC port is compared with', 'Наша рекомпіляція версії для Xbox 360: еталон, з яким порівнюємо PC-порт')),
  ('Kenney Input Prompts', 'Kenney', 'https://kenney.nl/assets/input-prompts', t('c.kenney', 'Gamepad button icons (CC0)', 'Іконки кнопок ґеймпада (CC0)')),
- ('DXVK', 'Philip «doitsujin» Rebohle', 'https://github.com/doitsujin/dxvk', t('c.dxvk', 'Optional Vulkan renderer, under its own license', 'Необов\'язковий Vulkan-рендерер, під власною ліцензією')),
 ]
 
 SHOTS = [('menu-graphics.jpg', t('s.gfx', 'Screen and graphics', 'Екран і графіка')),

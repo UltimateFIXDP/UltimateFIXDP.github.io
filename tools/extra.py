@@ -70,8 +70,8 @@ FAQ = [
   t('a2', "The Steam version 1.01b of <em>The Director's Cut</em>. Every patch checks the game's bytes first: on another build it switches itself off and says so in <code>ufx.log</code>.",
     'Steam-версія 1.01b <em>The Director\'s Cut</em>. Кожна правка спершу звіряє байти гри: на іншій збірці вона вимикається сама й пише про це в <code>ufx.log</code>.')),
  (t('q3', 'Can I keep DPfix, ZachFix or DP1 Launcher?', 'Чи можна лишити DPfix, ZachFix або DP1 Launcher?'),
-  t('a3', 'No, UltimateFIXDP replaces them. Remove DPfix (<code>d3d9.dll</code>, <code>DPfix.ini</code>) and the other fixes first. DXVK is fine and comes in the archive.',
-    'Ні, UltimateFIXDP їх замінює. Спершу приберіть DPfix (<code>d3d9.dll</code>, <code>DPfix.ini</code>) та інші фікси. DXVK можна, він є в архіві.')),
+  t('a3', 'No, UltimateFIXDP replaces them. Remove DPfix (<code>d3d9.dll</code>, <code>DPfix.ini</code>) and the other fixes first.',
+    'Ні, UltimateFIXDP їх замінює. Спершу приберіть DPfix (<code>d3d9.dll</code>, <code>DPfix.ini</code>) та інші фікси.')),
  (t('q4', 'How do I install a translation?', 'Як поставити переклад?'),
   t('a4', 'Make a folder in <code>UltimateFix\\mods\\</code> and put the game files there (<code>fontwide.xpc</code>, <code>mes_all.mes</code>), or the <code>text\\</code> folder of the SWERY Localization Tool. Switch it on in F10 → Mods and restart the game.',
     'Створіть теку в <code>UltimateFix\\mods\\</code> і покладіть туди файли гри (<code>fontwide.xpc</code>, <code>mes_all.mes</code>) або теку <code>text\\</code> із SWERY Localization Tool. Увімкніть мод у F10 → Моди й перезапустіть гру.')),
@@ -82,8 +82,8 @@ FAQ = [
   t('a6', '<code>UltimateFix\\ufx.log</code> and any <code>crash_*.dmp</code> / <code>hang_*.dmp</code>, through GitHub Issues or Telegram. Every feature can be switched off in F10; <code>[Debug] SafeMode=1</code> starts with fewer hooks.',
     '<code>UltimateFix\\ufx.log</code> і файли <code>crash_*.dmp</code> / <code>hang_*.dmp</code>, якщо є, через GitHub Issues або Telegram. Будь-яку функцію можна вимкнути в F10; <code>[Debug] SafeMode=1</code> запускає мод із меншою кількістю хуків.')),
  (t('q7', 'How do I remove it?', 'Як видалити?'),
-  t('a7', 'Delete <code>X3DAudio1_7.dll</code> from the game folder. Nothing else of the game is changed; the 4 GB patch, if you used it, is undone with <code>ufx_laa.exe --undo</code>.',
-    'Видаліть <code>X3DAudio1_7.dll</code> із теки гри. Більше нічого в грі не змінено; 4GB-патч, якщо ставили, прибирається <code>ufx_laa.exe --undo</code>.')),
+  t('a7', 'Delete <code>X3DAudio1_7.dll</code> from the game folder. Nothing else of the game is changed; to undo the 4 GB flag, put <code>DP.exe.bak</code> back as <code>DP.exe</code> or let Steam verify the files.',
+    'Видаліть <code>X3DAudio1_7.dll</code> із теки гри. Більше нічого в грі не змінено; щоб прибрати прапор 4 ГБ, поверніть <code>DP.exe.bak</code> як <code>DP.exe</code> або перевірте файли в Steam.')),
 ]
 
 for k, en, uk in [
@@ -147,7 +147,7 @@ tree = ('<pre class="tree"><span class="t-dim">Deadly Premonition The Director\'
 
 # ---- texts of the calm design (2026-11-19) ----
 for k, en, uk in [
- ('hero.pill', 'Version 0.7.1 · fewer crashes, QTE at 180 FPS, 4 GB by itself', 'Версія 0.7.1 · менше вильотів, QTE на 180 FPS, 4 ГБ самі собою'),
+ ('hero.pill', 'Version 0.7.2 · updates itself, fewer crashes, 4 GB by itself', 'Версія 0.7.2 · оновлюється сама, менше вильотів, 4 ГБ самі собою'),
  ('hero.title', 'Deadly Premonition,<br>the way it should have been', 'Deadly Premonition,<br>якою вона мала бути'),
  ('hero.lead', "One file in the game folder instead of five mods. Stability, up to 180 FPS, your monitor's resolution and a full settings menu on F10.",
   "Один файл у теці гри замість п'яти модів. Стабільність, до 180 FPS, роздільність вашого монітора й повне меню налаштувань на F10."),
