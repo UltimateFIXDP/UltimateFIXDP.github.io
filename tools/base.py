@@ -3,7 +3,7 @@
 import json, sys, html, os
 
 OUT = sys.argv[1]
-SITE = 'https://littlebitua.github.io/UltimateFIXDP/'
+SITE = 'https://ultimatefixdp.github.io/'
 REPO = 'https://github.com/LittleBitUA/UltimateFIXDP'
 
 T = {}  # key -> (en, uk); values may contain HTML
