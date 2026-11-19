@@ -15,15 +15,15 @@
   <meta property="og:site_name" content="UltimateFIXDP">
   <meta property="og:title" content="UltimateFIXDP — the all-in-one fix for Deadly Premonition">
   <meta property="og:description" content="One DLL: stability, 45 → 180 FPS, HBAO, SMAA, Xbox 360 look, DualSense, mod manager, photo mode. UA + EN.">
-  <meta property="og:image" content="https://littlebitua.github.io/UltimateFIXDP/screenshots/menu-graphics.jpg">
+  <meta property="og:image" content="https://littlebitua.github.io/UltimateFIXDP/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
   <meta property="og:locale" content="en_US">
   <meta property="og:locale:alternate" content="uk_UA">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="UltimateFIXDP — the all-in-one fix for Deadly Premonition">
-  <meta name="twitter:image" content="https://littlebitua.github.io/UltimateFIXDP/screenshots/menu-graphics.jpg">
-  <script type="application/ld+json">
-  {"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "UltimateFIXDP", "description": "UltimateFIXDP: the all-in-one fix for Deadly Premonition: The Director's Cut. One DLL: stability, 45 to 180 FPS, real resolution, HBAO, SMAA, Xbox 360 look, DualSense, full map, mod manager, photo mode. Ukrainian + English.", "applicationCategory": "GameApplication", "operatingSystem": "Windows", "url": "https://littlebitua.github.io/UltimateFIXDP/", "downloadUrl": "https://github.com/LittleBitUA/UltimateFIXDP/releases/latest", "softwareVersion": "0.7.0", "license": "https://opensource.org/licenses/MIT", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}, "author": {"@type": "Person", "name": "Dmytro Bidlov", "url": "https://t.me/LittleBitUA"}, "inLanguage": ["uk", "en"]}
-  </script>
+  <meta name="twitter:image" content="https://littlebitua.github.io/UltimateFIXDP/og-image.jpg">
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "UltimateFIXDP", "description": "UltimateFIXDP: the all-in-one fix for Deadly Premonition: The Director's Cut. One DLL: stability, 45 to 180 FPS, real resolution, HBAO, SMAA, Xbox 360 look, DualSense, full map, mod manager, photo mode. Ukrainian + English.", "applicationCategory": "GameApplication", "operatingSystem": "Windows", "url": "https://littlebitua.github.io/UltimateFIXDP/", "downloadUrl": "https://github.com/LittleBitUA/UltimateFIXDP/releases/latest", "softwareVersion": "0.7.0", "license": "https://opensource.org/licenses/MIT", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}, "author": {"@type": "Person", "name": "Dmytro Bidlov", "url": "https://t.me/LittleBitUA"}, "inLanguage": ["uk", "en"]}</script>
   <link rel="icon" href="logo.png" type="image/png">
   <link rel="apple-touch-icon" href="logo.png">
   <link rel="preconnect" href="https://api.github.com">
@@ -47,11 +47,12 @@
       </span>
     </a>
     <nav class="nav">
+      <a href="#new" data-i18n="nav.new">What's new</a>
       <a href="#features" data-i18n="nav.features">Features</a>
-      <a href="#engine" data-i18n="nav.engine">Engine</a>
+      <a href="#mods" data-i18n="nav.mods">Mods</a>
       <a href="#shots" data-i18n="nav.shots">Screenshots</a>
       <a href="#install" data-i18n="nav.install">Install</a>
-      <a href="#about" data-i18n="nav.about">About</a>
+      <a href="#faq" data-i18n="nav.faq">FAQ</a>
     </nav>
     <div class="topbar-right">
       <a class="topbar-icon" href="https://github.com/LittleBitUA/UltimateFIXDP" target="_blank" rel="noopener" data-i18n-title="hero.viewRepo" title="View on GitHub" aria-label="View on GitHub"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M12 .3a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.5-1.4-1.3-1.8-1.3-1.8-1.1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.7-1.6-2.7-.3-5.5-1.3-5.5-6 0-1.3.5-2.3 1.2-3.2-.1-.3-.5-1.5.1-3.2 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.6 1.7.2 2.9.1 3.2.8.9 1.2 2 1.2 3.2 0 4.6-2.8 5.7-5.5 6 .4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A12 12 0 0 0 12 .3z"/></svg></a>
@@ -64,7 +65,7 @@
 
   <section class="hero" id="top">
     <div class="hero-inner">
-      <a class="successor" id="whatsnew" href="https://github.com/LittleBitUA/UltimateFIXDP/releases/latest" target="_blank" rel="noopener" data-i18n-html="hero.whatsnew">✦ New in 0.7.0: a mod manager, no more flickering far textures, HBAO, SMAA, the Xbox 360 look, physics up to 180 FPS →</a>
+      <a class="successor" href="#new" data-i18n-html="hero.whatsnew">✦ New in 0.7.0: a mod manager, no more flickering far textures, HBAO, SMAA, the Xbox 360 look, physics up to 180 FPS →</a>
       <div class="badge" data-i18n="hero.badge">FAN-MADE FIX · MIT · OPEN SOURCE</div>
       <h1 class="hero-title">
         <span class="hero-line">DEADLY</span>
@@ -78,7 +79,7 @@
           <span class="btn-launch-icon">
             <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 3v12m0 0l-5-5m5 5l5-5M5 21h14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </span>
-          <span class="btn-launch-label" id="download-label" data-i18n="hero.download">DOWNLOAD</span>
+          <span class="btn-launch-label" data-i18n="hero.download">DOWNLOAD</span>
           <span class="btn-launch-meta" id="download-meta">— · Latest</span>
         </a>
       </div>
@@ -93,6 +94,53 @@
         <span id="downloads" hidden><span id="downloads-count"></span> <span data-i18n="hero.downloads">downloads</span></span>
       </div>
     </div>
+    <a class="hero-scroll" href="#new" aria-label="Scroll down"><span></span></a>
+  </section>
+
+  <div class="stats">
+      <div class="stat reveal"><span class="stat-num">180</span><span class="stat-label" data-i18n="st.fps">FPS with the car at normal speed</span></div>
+      <div class="stat reveal"><span class="stat-num">1</span><span class="stat-label" data-i18n="st.dll">DLL instead of five mods</span></div>
+      <div class="stat reveal"><span class="stat-num">64</span><span class="stat-label" data-i18n="st.map">tiles on the pause map</span></div>
+      <div class="stat reveal"><span class="stat-num">60</span><span class="stat-label" data-i18n="st.saves">named save backups</span></div>
+      <div class="stat reveal"><span class="stat-num">13</span><span class="stat-label" data-i18n="st.filters">photo mode filters</span></div>
+      <div class="stat reveal"><span class="stat-num">0</span><span class="stat-label" data-i18n="st.files">game files changed on disk</span></div>
+  </div>
+
+  <section class="section" id="new">
+    <header class="section-head">
+      <span class="section-eyebrow" data-i18n="new.eyebrow">VERSION 0.7.0</span>
+      <h2 class="section-title" data-i18n="new.title">What's new</h2>
+    </header>
+    <div class="grid grid-4">
+      <article class="glass-card news reveal"><h3 data-i18n="n1.t">Mod manager</h3><p data-i18n-html="n1.d">Folders in <code>UltimateFix\mods\</code>, on/off and order in F10. Translations, texture packs, any game file by its name.</p></article>
+      <article class="glass-card news reveal"><h3 data-i18n="n2.t">Far textures fixed</h3><p data-i18n-html="n2.d">Depth precision, mipmaps for textures without them, steadier far shadows.</p></article>
+      <article class="glass-card news reveal"><h3 data-i18n="n3.t">HBAO · SMAA · Xbox 360 look</h3><p data-i18n-html="n3.d">Horizon-based occlusion with a depth-aware blur, SMAA 1x, the console's grading and gamma.</p></article>
+      <article class="glass-card news reveal"><h3 data-i18n="n4.t">High FPS physics</h3><p data-i18n-html="n4.d">The car and about 80 timers of the game run right at 120–180 FPS. FPS unlocked by default.</p></article>
+      <article class="glass-card news reveal"><h3 data-i18n="n5.t">Story and residents</h3><p data-i18n-html="n5.d">Episode, chapter, side quests, the next destination by name; every resident's timetable.</p></article>
+      <article class="glass-card news reveal"><h3 data-i18n="n6.t">Camera and mouse</h3><p data-i18n-html="n6.d">Field of view in play, the Xbox 360 quick turn, mouse speed 25–400 % and inversion per axis.</p></article>
+      <article class="glass-card news reveal"><h3 data-i18n="n7.t">Photo mode presets</h3><p data-i18n-html="n7.d">13 filters, grain, sepia, aberration, letterbox and four presets of your own.</p></article>
+      <article class="glass-card news reveal"><h3 data-i18n="n8.t">Stability and saves</h3><p data-i18n-html="n8.d">No endless hang on a NaN angle, audio kept in memory, 60 backups named by episode and chapter.</p></article>
+    </div>
+    <p class="install-note known" data-i18n-html="new.known"><strong>Known issues:</strong> a light strip along some wall corners with HBAO, doubled depth-of-field edges at render scale 300 %, the X on the pause map drifts while the map pans.</p>
+    <p class="center"><a class="link-red" href="https://github.com/LittleBitUA/UltimateFIXDP/releases/latest" target="_blank" rel="noopener" data-i18n="new.all">All changes on GitHub →</a></p>
+  </section>
+
+  <section class="section" id="before">
+    <header class="section-head">
+      <span class="section-eyebrow" data-i18n="before.eyebrow">BEFORE AND AFTER</span>
+      <h2 class="section-title" data-i18n="before.title">The PC port, fixed</h2>
+    </header>
+    <div class="ba glass-card">
+      <div class="ba-row ba-head"><div class="ba-cell ba-old"><span data-i18n="before.a">Stock PC port</span></div><div class="ba-arrow"></div><div class="ba-cell ba-new"><span data-i18n="before.b">With UltimateFIXDP</span></div></div>
+      <div class="ba-row reveal"><div class="ba-cell ba-old"><span data-i18n="b1.a">About 45 FPS on many PCs, an idle GPU</span></div><div class="ba-arrow">→</div><div class="ba-cell ba-new"><span data-i18n="b1.b">Up to 180 FPS, physics and timers at normal speed</span></div></div>
+      <div class="ba-row reveal"><div class="ba-cell ba-old"><span data-i18n="b2.a">Picture rendered at 1280×720 and stretched</span></div><div class="ba-arrow">→</div><div class="ba-cell ba-new"><span data-i18n="b2.b">Your monitor's resolution, up to 3× supersampling</span></div></div>
+      <div class="ba-row reveal"><div class="ba-cell ba-old"><span data-i18n="b3.a">Crashes after cutscenes, freezes, Alt+Tab hangs</span></div><div class="ba-arrow">→</div><div class="ba-cell ba-new"><span data-i18n="b3.b">Guarded in the code, a dump if anything slips through</span></div></div>
+      <div class="ba-row reveal"><div class="ba-cell ba-old"><span data-i18n="b4.a">Far roads and roofs flicker</span></div><div class="ba-arrow">→</div><div class="ba-cell ba-new"><span data-i18n="b4.b">Steady to the horizon</span></div></div>
+      <div class="ba-row reveal"><div class="ba-cell ba-old"><span data-i18n="b5.a">Rumble calculated, never sent to the pad</span></div><div class="ba-arrow">→</div><div class="ba-cell ba-new"><span data-i18n="b5.b">Rumble and DualSense adaptive triggers per weapon</span></div></div>
+      <div class="ba-row reveal"><div class="ba-cell ba-old"><span data-i18n="b6.a">A 3×3 window of the map that turns with you</span></div><div class="ba-arrow">→</div><div class="ba-cell ba-new"><span data-i18n="b6.b">All 64 tiles, zoom, north up, your own waypoint</span></div></div>
+      <div class="ba-row reveal"><div class="ba-cell ba-old"><span data-i18n="b7.a">One save file, emptied before every write</span></div><div class="ba-arrow">→</div><div class="ba-cell ba-new"><span data-i18n="b7.b">Atomic writes and 60 named backups</span></div></div>
+      <div class="ba-row reveal"><div class="ba-cell ba-old"><span data-i18n="b8.a">Difficulty stuck on Easy</span></div><div class="ba-arrow">→</div><div class="ba-cell ba-new"><span data-i18n="b8.b">Normal by default, your choice</span></div></div>
+    </div>
   </section>
 
   <section class="section" id="features">
@@ -101,62 +149,62 @@
       <h2 class="section-title" data-i18n="features.title">Greenvale, the way it should have shipped</h2>
     </header>
     <div class="grid grid-3">
-      <article class="glass-card feature">
+      <article class="glass-card feature reveal">
         <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/></svg></div>
         <h3 data-i18n-html="f.stab.t">Stability</h3>
         <p data-i18n-html="f.stab.d">The crash after cutscenes, the zero-frame freeze, the Alt+Tab hang and the endless hang on a broken angle are fixed. A crash handler and a freeze watchdog write a dump if anything still goes wrong.</p>
       </article>
-      <article class="glass-card feature">
+      <article class="glass-card feature reveal">
         <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L4 14h7l-1 8 9-12h-7z"/></svg></div>
         <h3 data-i18n-html="f.fps.t">45 → 180 FPS</h3>
         <p data-i18n-html="f.fps.d">On some PCs the game sat at ~45 FPS with an idle GPU. Fixed. Physics, the car, doors, animations and every timer of the game run right at 120–180 FPS.</p>
       </article>
-      <article class="glass-card feature">
+      <article class="glass-card feature reveal">
         <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></svg></div>
         <h3 data-i18n-html="f.gfx.t">Graphics</h3>
         <p data-i18n-html="f.gfx.d">Your monitor's resolution, supersampling up to 3×, HBAO, SMAA, sharpening, wet reflections, 16× anisotropy, sharper shadows, longer draw distance, and <strong>no more flickering far textures</strong>.</p>
       </article>
-      <article class="glass-card feature">
+      <article class="glass-card feature reveal">
         <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="12" rx="2"/><path d="M8 21h8M12 17v4"/></svg></div>
         <h3 data-i18n-html="f.x360.t">Xbox 360 look</h3>
         <p data-i18n-html="f.x360.d">The console's colour grading and TV gamma, compared with our own Xbox 360 recompilation, on top of the PC picture.</p>
       </article>
-      <article class="glass-card feature">
+      <article class="glass-card feature reveal">
         <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3h6v3a2 2 0 1 0 4 0V3h2v6h-3a2 2 0 1 0 0 4h3v8h-6v-3a2 2 0 1 0-4 0v3H3v-6h3a2 2 0 1 0 0-4H3V3z"/></svg></div>
         <h3 data-i18n-html="f.mods.t">Mod manager</h3>
         <p data-i18n-html="f.mods.d">Drop a folder into <code>UltimateFix\mods\</code>: a translation from the SWERY Localization Tool, a texture pack, or any game file by its name (<code>fontwide.xpc</code>, <code>mes_all.mes</code>). Order and on/off in F10.</p>
       </article>
-      <article class="glass-card feature">
+      <article class="glass-card feature reveal">
         <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="10" rx="5"/><path d="M7 10v4M5 12h4M15 11h.01M18 13h.01"/></svg></div>
         <h3 data-i18n-html="f.pad.t">DualSense and Xbox pads</h3>
         <p data-i18n-html="f.pad.d">USB and Bluetooth without Steam Input, adaptive triggers per weapon, rumble that the PC port never sent, aim on L2 and fire on R2, the Xbox 360 quick turn, button icons that follow the device.</p>
       </article>
-      <article class="glass-card feature">
+      <article class="glass-card feature reveal">
         <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 4L3 6v14l6-2 6 2 6-2V4l-6 2z"/><path d="M9 4v14M15 6v14"/></svg></div>
         <h3 data-i18n-html="f.map.t">Map and waypoints</h3>
         <p data-i18n-html="f.map.d">The full pause map with all 64 tiles, north up. F7 sets a waypoint that becomes the game's own objective, with its beacon and minimap arrows.</p>
       </article>
-      <article class="glass-card feature">
+      <article class="glass-card feature reveal">
         <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h7a3 3 0 0 1 3 3v13a2 2 0 0 0-2-2H4z"/><path d="M20 4h-4a3 3 0 0 0-3 3"/></svg></div>
         <h3 data-i18n-html="f.story.t">Story and residents</h3>
         <p data-i18n-html="f.story.d">Where the story stands, side quests and where to go next by name. The live timetable of every resident of Greenvale.</p>
       </article>
-      <article class="glass-card feature">
+      <article class="glass-card feature reveal">
         <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="7" width="18" height="13" rx="2"/><circle cx="12" cy="13.5" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg></div>
         <h3 data-i18n-html="f.photo.t">Photo mode</h3>
         <p data-i18n-html="f.photo.d">Free camera, frozen time, 13 filters with grain, sepia, aberration and letterbox, your own presets, costumes, poses, PNG screenshots.</p>
       </article>
-      <article class="glass-card feature">
+      <article class="glass-card feature reveal">
         <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"/><path d="M17 21v-8H7v8M7 3v5h8"/></svg></div>
         <h3 data-i18n-html="f.save.t">Safe saves</h3>
         <p data-i18n-html="f.save.d">Atomic writes, a damaged <code>dp.sav</code> restored by itself, 60 backups named by episode, chapter and play time.</p>
       </article>
-      <article class="glass-card feature">
+      <article class="glass-card feature reveal">
         <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 18a8 8 0 1 1 16 0"/><path d="M12 18l4-6"/></svg></div>
         <h3 data-i18n-html="f.tools.t">Tools</h3>
         <p data-i18n-html="f.tools.d">Frame statistics, a built-in profiler that found the 45 FPS bug, cheats (money, time, weather, ammo), mouse sensitivity and inversion.</p>
       </article>
-      <article class="glass-card feature">
+      <article class="glass-card feature reveal">
         <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg></div>
         <h3 data-i18n-html="f.lang.t">Two languages</h3>
         <p data-i18n-html="f.lang.d">Ukrainian and English, switched in the menu. One DLL, no installer: press F10 in game and everything is there.</p>
@@ -171,27 +219,27 @@
       <p class="section-lead" data-i18n="engine.lead">Every fix comes from taking the game's code apart and comparing the PC port with the Xbox 360 original.</p>
     </header>
     <div class="grid grid-3">
-      <article class="glass-card feature engine">
+      <article class="glass-card feature engine reveal">
         <h3 data-i18n-html="e.time.t">The "only a reboot helps" slowdown</h3>
         <p data-i18n-html="e.time.d">The game counted time from the Windows uptime in single-precision floats: after days without a reboot the frame time lost precision. The mod hands it a counter that starts with the game.</p>
       </article>
-      <article class="glass-card feature engine">
+      <article class="glass-card feature engine reveal">
         <h3 data-i18n-html="e.fps.t">The 45 FPS mystery</h3>
         <p data-i18n-html="e.fps.d">Every frame the game asked Windows about a WinMM gamepad, even with none connected, and on some systems that call takes milliseconds.</p>
       </article>
-      <article class="glass-card feature engine">
+      <article class="glass-card feature engine reveal">
         <h3 data-i18n-html="e.depth.t">Flicker in the distance</h3>
         <p data-i18n-html="e.depth.d">The play camera's near plane sat at 1.0, so the 24-bit depth buffer had almost no precision far away. At 20.0 far roads, roofs and decals stop fighting.</p>
       </article>
-      <article class="glass-card feature engine">
+      <article class="glass-card feature engine reveal">
         <h3 data-i18n-html="e.ticks.t">Above 120 FPS</h3>
         <p data-i18n-html="e.ticks.d">About 80 timers turned the frame time into whole ticks: above 120 FPS they stood still or ran double. They now share whole steps.</p>
       </article>
-      <article class="glass-card feature engine">
+      <article class="glass-card feature engine reveal">
         <h3 data-i18n-html="e.house.t">Day and night in buildings</h3>
         <p data-i18n-html="e.house.d">The port read the building list with a wrong byte-order key: 64 of 81 entries were misread and interiors got the wrong light.</p>
       </article>
-      <article class="glass-card feature engine">
+      <article class="glass-card feature engine reveal">
         <h3 data-i18n-html="e.crash.t">The crash after cutscenes</h3>
         <p data-i18n-html="e.crash.d">An NPC sent to waypoint -1 read the navigation table out of bounds. Guarded at the lookup, together with a divide-by-zero freeze and a NaN hang.</p>
       </article>
@@ -204,22 +252,95 @@
       <h2 class="section-title" data-i18n="shots.title">One menu for everything</h2>
     </header>
     <div class="shots">
-      <figure class="shot glass-card">
-        <a href="screenshots/menu-graphics.jpg" target="_blank" rel="noopener"><img src="screenshots/menu-graphics.jpg" alt="Screen and graphics" loading="lazy"></a>
+      <figure class="shot glass-card reveal">
+        <a href="screenshots/menu-graphics.jpg" class="zoom"><img src="screenshots/menu-graphics.jpg" alt="Screen and graphics" loading="lazy"></a>
         <figcaption data-i18n-html="s.gfx">Screen and graphics</figcaption>
       </figure>
-      <figure class="shot glass-card">
-        <a href="screenshots/menu-controls.jpg" target="_blank" rel="noopener"><img src="screenshots/menu-controls.jpg" alt="Controls" loading="lazy"></a>
+      <figure class="shot glass-card reveal">
+        <a href="screenshots/menu-controls.jpg" class="zoom"><img src="screenshots/menu-controls.jpg" alt="Controls" loading="lazy"></a>
         <figcaption data-i18n-html="s.ctl">Controls</figcaption>
       </figure>
-      <figure class="shot glass-card">
-        <a href="screenshots/menu-world.jpg" target="_blank" rel="noopener"><img src="screenshots/menu-world.jpg" alt="Game and world" loading="lazy"></a>
+      <figure class="shot glass-card reveal">
+        <a href="screenshots/menu-world.jpg" class="zoom"><img src="screenshots/menu-world.jpg" alt="Game and world" loading="lazy"></a>
         <figcaption data-i18n-html="s.world">Game and world</figcaption>
       </figure>
-      <figure class="shot glass-card">
-        <a href="screenshots/menu-fixes.jpg" target="_blank" rel="noopener"><img src="screenshots/menu-fixes.jpg" alt="Fixes" loading="lazy"></a>
+      <figure class="shot glass-card reveal">
+        <a href="screenshots/menu-fixes.jpg" class="zoom"><img src="screenshots/menu-fixes.jpg" alt="Fixes" loading="lazy"></a>
         <figcaption data-i18n-html="s.fix">Fixes</figcaption>
       </figure>
+    </div>
+  </section>
+
+  <section class="section" id="mods">
+    <header class="section-head">
+      <span class="section-eyebrow" data-i18n="mods.eyebrow">MOD MANAGER</span>
+      <h2 class="section-title" data-i18n="mods.title">Drop a folder, press F10</h2>
+      <p class="section-lead" data-i18n-html="mods.lead">Every folder in <code>UltimateFix\mods\</code> is a mod. The one higher in the list wins. Nothing is written to the game's files: everything is replaced in memory.</p>
+    </header>
+    <div class="mods-wrap">
+      <div class="glass-card tree-card reveal"><pre class="tree"><span class="t-dim">Deadly Premonition The Director's Cut\</span>
+├─ DP.exe
+├─ X3DAudio1_7.dll        <span class="t-red">← UltimateFIXDP</span>
+└─ UltimateFix\
+   └─ mods\
+      ├─ UA\
+      │  ├─ fontwide.xpc
+      │  └─ mes_all.mes
+      └─ HD Textures\
+         ├─ mod.ini
+         └─ textures\
+            └─ 1a2b3c4d.dds</pre></div>
+      <div class="mods-cards">
+        <article class="glass-card reveal"><h3 data-i18n="mods.c1.t">Game files by name</h3><p data-i18n-html="mods.c1.d">Any file of the game's archives right in the mod folder: by its name when it is unique, or by its path (<code>UPDATA\…</code>). A <code>.dds</code> with an XPC's name replaces the picture inside it.</p></article>
+        <article class="glass-card reveal"><h3 data-i18n="mods.c2.t">Translations</h3><p data-i18n-html="mods.c2.d"><code>text\mes_all.json</code> and <code>glyphmap.json</code> of the SWERY Localization Tool are laid over the game's text, record by record.</p></article>
+        <article class="glass-card reveal"><h3 data-i18n="mods.c3.t">Textures</h3><p data-i18n-html="mods.c3.d"><code>textures\&lt;hash&gt;.dds</code> or <code>.png</code>, compatible with the packs for DPfix. <code>[Debug] DumpTextures=1</code> dumps every texture named by its hash.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="install">
+    <header class="section-head">
+      <span class="section-eyebrow" data-i18n="install.eyebrow">GET STARTED</span>
+      <h2 class="section-title" data-i18n="install.title">Install in a minute</h2>
+    </header>
+    <ol class="steps">
+      <li class="glass-card step reveal"><span class="step-num">1</span><h3 data-i18n="install.s1.t">Download</h3><p data-i18n-html="install.s1.d">Take the latest <code>UltimateFIXDP-*.zip</code> from Releases and back up <code>savedata\dp.sav</code>.</p></li>
+      <li class="glass-card step reveal"><span class="step-num">2</span><h3 data-i18n="install.s2.t">Copy</h3><p data-i18n-html="install.s2.d">Put <code>X3DAudio1_7.dll</code> and the <code>UltimateFix</code> folder next to <code>DP.exe</code>.</p></li>
+      <li class="glass-card step reveal"><span class="step-num">3</span><h3 data-i18n="install.s3.t">Play</h3><p data-i18n-html="install.s3.d">Start the game as usual and press <strong>F10</strong>. To remove the mod, delete the DLL.</p></li>
+    </ol>
+    <p class="install-note" data-i18n="install.note">Steam version 1.01b. Do not combine with DPfix, ZachFix or DPStabilityFix: UltimateFIXDP replaces them. For a DualSense turn Steam Input off for the game.</p>
+  </section>
+
+  <section class="section" id="keys">
+    <header class="section-head">
+      <span class="section-eyebrow" data-i18n="keys.eyebrow">CONTROLS</span>
+      <h2 class="section-title" data-i18n="keys.title">Keys worth knowing</h2>
+    </header>
+    <div class="keys-grid glass-card reveal">
+      <div class="key-row"><span class="keys"><kbd>F10</kbd></span><span class="key-what" data-i18n="k.f10">Settings menu</span></div>
+      <div class="key-row"><span class="keys"><kbd>F7</kbd></span><span class="key-what" data-i18n="k.f7">Waypoint on the map or in the world</span></div>
+      <div class="key-row"><span class="keys"><kbd>Shift</kbd><span class="plus">+</span><kbd>F7</kbd></span><span class="key-what" data-i18n="k.sf7">Remove the waypoint</span></div>
+      <div class="key-row"><span class="keys"><kbd>Ctrl</kbd><span class="plus">+</span><kbd>F7</kbd></span><span class="key-what" data-i18n="k.cf7">Waypoint to the game's objective</span></div>
+      <div class="key-row"><span class="keys"><kbd>Shift</kbd><span class="plus">+</span><kbd>S</kbd></span><span class="key-what" data-i18n="k.ss">Quick turn</span></div>
+      <div class="key-row"><span class="keys"><kbd>F6</kbd></span><span class="key-what" data-i18n="k.f6">Photo mode</span></div>
+      <div class="key-row"><span class="keys"><kbd>F5</kbd></span><span class="key-what" data-i18n="k.f5">Free camera</span></div>
+      <div class="key-row"><span class="keys"><kbd>F11</kbd></span><span class="key-what" data-i18n="k.f11">Screenshot (PNG, without the menu)</span></div>
+    </div>
+  </section>
+
+  <section class="section" id="faq">
+    <header class="section-head">
+      <span class="section-eyebrow" data-i18n="faq.eyebrow">QUESTIONS</span>
+      <h2 class="section-title" data-i18n="faq.title">Before you ask</h2>
+    </header>
+    <div class="faq-list">
+      <details class="glass-card faq reveal"><summary><span data-i18n="q1">Is it safe for my saves?</span></summary><p data-i18n-html="a1">Yes. The mod writes <code>dp.sav</code> through a temporary file and keeps 60 backups in <code>UltimateFix\savebackups</code>, each named by episode, chapter and play time. A damaged save is restored from the newest good copy by itself. Still, back up your save before the first start.</p></details>
+      <details class="glass-card faq reveal"><summary><span data-i18n="q2">Which version of the game?</span></summary><p data-i18n-html="a2">The Steam version 1.01b of <em>The Director's Cut</em>. Every patch checks the game's bytes first: on another build it switches itself off and says so in <code>ufx.log</code>.</p></details>
+      <details class="glass-card faq reveal"><summary><span data-i18n="q3">Can I keep DPfix, ZachFix or DP1 Launcher?</span></summary><p data-i18n-html="a3">No, UltimateFIXDP replaces them. Remove DPfix (<code>d3d9.dll</code>, <code>DPfix.ini</code>) and the other fixes first. DXVK is fine and comes in the archive.</p></details>
+      <details class="glass-card faq reveal"><summary><span data-i18n="q4">How do I install a translation?</span></summary><p data-i18n-html="a4">Make a folder in <code>UltimateFix\mods\</code> and put the game files there (<code>fontwide.xpc</code>, <code>mes_all.mes</code>), or the <code>text\</code> folder of the SWERY Localization Tool. Switch it on in F10 → Mods and restart the game.</p></details>
+      <details class="glass-card faq reveal"><summary><span data-i18n="q5">The DualSense does not work</span></summary><p data-i18n-html="a5">Turn Steam Input off for the game (Properties → Controller). Then the mod reads the DualSense directly over USB or Bluetooth.</p></details>
+      <details class="glass-card faq reveal"><summary><span data-i18n="q6">Something broke. What do I send?</span></summary><p data-i18n-html="a6"><code>UltimateFix\ufx.log</code> and any <code>crash_*.dmp</code> / <code>hang_*.dmp</code>, through GitHub Issues or Telegram. Every feature can be switched off in F10; <code>[Debug] SafeMode=1</code> starts with fewer hooks.</p></details>
+      <details class="glass-card faq reveal"><summary><span data-i18n="q7">How do I remove it?</span></summary><p data-i18n-html="a7">Delete <code>X3DAudio1_7.dll</code> from the game folder. Nothing else of the game is changed; the 4 GB patch, if you used it, is undone with <code>ufx_laa.exe --undo</code>.</p></details>
     </div>
   </section>
 
@@ -229,38 +350,38 @@
       <h2 class="section-title" data-i18n="credits.title">Thanks to</h2>
       <p class="section-lead" data-i18n="credits.lead">The code is our own (MIT). The ideas, facts and addresses came from earlier community work.</p>
     </header>
-    <div class="grid grid-3">
-      <a class="glass-card credit" href="https://github.com/h714je/ZachFix" target="_blank" rel="noopener">
+    <div class="credits-grid">
+      <a class="glass-card credit reveal" href="https://github.com/h714je/ZachFix" target="_blank" rel="noopener">
         <h3>ZachFix</h3>
         <p class="credit-by">h714je</p>
         <p data-i18n-html="c.zach">Research of the port, many ideas</p>
       </a>
-      <a class="glass-card credit" href="https://github.com/PeterTh/dpfix" target="_blank" rel="noopener">
+      <a class="glass-card credit reveal" href="https://github.com/PeterTh/dpfix" target="_blank" rel="noopener">
         <h3>DPfix</h3>
         <p class="credit-by">Peter «Durante» Thoman</p>
         <p data-i18n-html="c.dpfix">Resolution, shadows, texture replacement</p>
       </a>
-      <a class="glass-card credit" href="https://github.com/Cesario67/DeadlyPremonitionFix" target="_blank" rel="noopener">
+      <a class="glass-card credit reveal" href="https://github.com/Cesario67/DeadlyPremonitionFix" target="_blank" rel="noopener">
         <h3>DPStabilityFix</h3>
         <p class="credit-by">Cesario67</p>
         <p data-i18n-html="c.stab">Saves, timing, DualSense layout</p>
       </a>
-      <a class="glass-card credit" href="https://github.com/Behelit09" target="_blank" rel="noopener">
+      <a class="glass-card credit reveal" href="https://github.com/Behelit09" target="_blank" rel="noopener">
         <h3>CrashFix · MapFix · FreeCam</h3>
         <p class="credit-by">Behelit09</p>
         <p data-i18n-html="c.beh">Navigation crash, the full map, free camera</p>
       </a>
-      <a class="glass-card credit" href="https://github.com/LittleBitUA/DPRecomp" target="_blank" rel="noopener">
+      <a class="glass-card credit reveal" href="https://github.com/LittleBitUA/DPRecomp" target="_blank" rel="noopener">
         <h3>DPRecomp</h3>
         <p class="credit-by">«Little Bit»</p>
         <p data-i18n-html="c.recomp">Our Xbox 360 recompilation: the reference the PC port is compared with</p>
       </a>
-      <a class="glass-card credit" href="https://kenney.nl/assets/input-prompts" target="_blank" rel="noopener">
+      <a class="glass-card credit reveal" href="https://kenney.nl/assets/input-prompts" target="_blank" rel="noopener">
         <h3>Kenney Input Prompts</h3>
         <p class="credit-by">Kenney</p>
         <p data-i18n-html="c.kenney">Gamepad button icons (CC0)</p>
       </a>
-      <a class="glass-card credit" href="https://github.com/doitsujin/dxvk" target="_blank" rel="noopener">
+      <a class="glass-card credit reveal" href="https://github.com/doitsujin/dxvk" target="_blank" rel="noopener">
         <h3>DXVK</h3>
         <p class="credit-by">Philip «doitsujin» Rebohle</p>
         <p data-i18n-html="c.dxvk">Optional Vulkan renderer, under its own license</p>
@@ -269,17 +390,18 @@
     <p class="install-note testers" data-i18n-html="credits.testers">🧪 Testers: <strong>Gold flin</strong> and <strong>Tree Fan</strong>. Thank you for playing the unfinished builds.</p>
   </section>
 
-  <section class="section" id="install">
-    <header class="section-head">
-      <span class="section-eyebrow" data-i18n="install.eyebrow">GET STARTED</span>
-      <h2 class="section-title" data-i18n="install.title">Install in a minute</h2>
-    </header>
-    <ol class="steps">
-      <li class="glass-card step"><span class="step-num">1</span><h3 data-i18n="install.s1.t">Download</h3><p data-i18n-html="install.s1.d">Take the latest <code>UltimateFIXDP-*.zip</code> from Releases and back up <code>savedata\dp.sav</code>.</p></li>
-      <li class="glass-card step"><span class="step-num">2</span><h3 data-i18n="install.s2.t">Copy</h3><p data-i18n-html="install.s2.d">Put <code>X3DAudio1_7.dll</code> and the <code>UltimateFix</code> folder next to <code>DP.exe</code>.</p></li>
-      <li class="glass-card step"><span class="step-num">3</span><h3 data-i18n="install.s3.t">Play</h3><p data-i18n-html="install.s3.d">Start the game as usual and press <strong>F10</strong>. To remove the mod, delete the DLL.</p></li>
-    </ol>
-    <p class="install-note" data-i18n="install.note">Steam version 1.01b. Do not combine with DPfix, ZachFix or DPStabilityFix: UltimateFIXDP replaces them. For a DualSense turn Steam Input off for the game.</p>
+  <section class="section cta">
+    <div class="glass-card cta-card reveal">
+      <h2 class="section-title" data-i18n="cta.title">Greenvale is waiting</h2>
+      <p class="section-lead" data-i18n="cta.text">Free, open source, one file. Agent York would approve.</p>
+      <div class="cta-actions">
+        <a class="btn-launch" id="download-btn-2" href="https://github.com/LittleBitUA/UltimateFIXDP/releases/latest" target="_blank" rel="noopener">
+          <span class="btn-launch-glow"></span>
+          <span class="btn-launch-label" data-i18n="hero.download">DOWNLOAD</span>
+        </a>
+        <a class="btn-ghost" href="https://github.com/LittleBitUA/UltimateFIXDP/issues" target="_blank" rel="noopener" data-i18n="cta.issue">Report a problem</a>
+      </div>
+    </div>
   </section>
 
   <section class="section" id="about">
@@ -304,6 +426,8 @@
     <p data-i18n-html="footer.line">Created by <strong>Dmytro Bidlov</strong> with love from <a href="https://t.me/LittleBitUA" target="_blank" rel="noopener">«Little Bit»</a> 🇺🇦</p>
     <p class="footer-disclaimer" data-i18n="footer.disclaimer">Not affiliated with Access Games / Rising Star Games / Toybox Inc. All rights to the game belong to their respective owners.</p>
   </footer>
+
+  <div class="lightbox" id="lightbox" hidden><img alt=""><button class="lightbox-close" aria-label="Close">×</button></div>
 
   <button class="scroll-top" id="scroll-top" aria-label="Scroll to top" data-i18n-title="ui.scrollTop" title="Scroll to top">
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7"/></svg>

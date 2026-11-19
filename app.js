@@ -99,6 +99,48 @@ function setDownloads(total) {
   if (sep) sep.hidden = false;
 }
 
+// Cards fade in as they come into view; without IntersectionObserver everything simply shows.
+function setupReveal() {
+  const els = document.querySelectorAll('.reveal');
+  if (!('IntersectionObserver' in window)) { els.forEach(e => e.classList.add('shown')); return; }
+  const io = new IntersectionObserver(entries => {
+    entries.forEach(en => { if (en.isIntersecting) { en.target.classList.add('shown'); io.unobserve(en.target); } });
+  }, { rootMargin: '0px 0px -8% 0px' });
+  els.forEach(e => io.observe(e));
+}
+
+// The section in view is lit in the top bar.
+function setupActiveNav() {
+  const links = [...document.querySelectorAll('.nav a[href^="#"]')];
+  const map = new Map(links.map(a => [a.getAttribute('href').slice(1), a]));
+  if (!('IntersectionObserver' in window)) return;
+  const io = new IntersectionObserver(entries => {
+    entries.forEach(en => {
+      if (!en.isIntersecting) return;
+      links.forEach(a => a.classList.remove('active'));
+      const a = map.get(en.target.id);
+      if (a) a.classList.add('active');
+    });
+  }, { rootMargin: '-45% 0px -50% 0px' });
+  map.forEach((a, id) => { const s = document.getElementById(id); if (s) io.observe(s); });
+}
+
+// Screenshots open over the page.
+function setupLightbox() {
+  const box = document.getElementById('lightbox');
+  if (!box) return;
+  const img = box.querySelector('img');
+  document.querySelectorAll('a.zoom').forEach(a => a.addEventListener('click', e => {
+    e.preventDefault();
+    img.src = a.getAttribute('href');
+    img.alt = (a.querySelector('img') || {}).alt || '';
+    box.hidden = false;
+  }));
+  const close = () => { box.hidden = true; img.removeAttribute('src'); };
+  box.addEventListener('click', close);
+  document.addEventListener('keydown', e => { if (e.key === 'Escape' && !box.hidden) close(); });
+}
+
 function setupScrollTop() {
   const btn = document.getElementById('scroll-top');
   if (!btn) return;
@@ -114,6 +156,9 @@ document.addEventListener('DOMContentLoaded', async () => {
     btn.addEventListener('click', () => applyLang(btn.dataset.setLang));
   });
   setupScrollTop();
+  setupReveal();
+  setupActiveNav();
+  setupLightbox();
   const [release, downloads] = await Promise.all([fetchLatestRelease(), fetchDownloads()]);
   setDownloadMeta(release);
   setDownloads(downloads);
