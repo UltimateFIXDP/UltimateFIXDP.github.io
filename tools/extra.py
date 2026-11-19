@@ -185,3 +185,56 @@ stats2 = '\n'.join('      <div class="stat2 reveal"><div class="stat2-num">%s</d
 compare = '\n'.join('      <div class="cmp-row"><span class="cmp-old">%s</span><span class="cmp-new">%s</span></div>'
                     % (txt(a, 'span', '', False), txt(b, 'span', '', False)) for a, b in BEFORE)
 news2 = '\n'.join('      <li class="news2 reveal">%s%s</li>' % (txt(tk, 'h3', '', False), txt(dk, 'p')) for tk, dk in NEWS)
+
+
+# ---- live F10 menu in the hero and the bento of features (2026-11-19) ----
+MENU = [
+ (('Screen and graphics', 'Екран і графіка'), ('Most items work at once, without restarting the game.', 'Більшість пунктів діє одразу, без перезапуску гри.'),
+  [(('Borderless window', 'Вікно без рамки'), 1), (("Your monitor's resolution", 'Роздільність монітора'), 1), (('HBAO ambient occlusion', 'Затінення HBAO'), 1),
+   (('SMAA anti-aliasing', 'Згладжування SMAA'), 1), (('Xbox 360 look', 'Вигляд Xbox 360'), 0)]),
+ (('Input', 'Ввід'), ('The DualSense works without Steam Input, over USB or Bluetooth.', 'DualSense працює без Steam Input, через USB або Bluetooth.'),
+  [(('DualSense directly', 'DualSense напряму'), 1), (('Adaptive triggers', 'Адаптивні триґери'), 1), (('Aim on L2, fire on R2', 'Приціл на L2, постріл на R2'), 1),
+   (('Quick turn', 'Швидкий розворот'), 1), (('Invert the mouse', 'Інвертувати мишу'), 0)]),
+ (('Game and world', 'Гра і світ'), ("The waypoint becomes the game's own objective: a beacon and minimap arrows.", 'Мітка стає рідною ціллю гри: маяк і стрілки на мінімапі.'),
+  [(('Full pause map', 'Повна мапа паузи'), 1), (('Waypoint on F7', 'Мітка на F7'), 1), (('High FPS physics', 'Фізика на високому FPS'), 1),
+   (('Longer draw distance', 'Більша дальність промальовки'), 1), (('Pause while the menu is open', 'Пауза, коли відкрите меню'), 0)]),
+ (('Photo mode', 'Фоторежим'), ('13 filters and four presets of your own.', '13 фільтрів і чотири власні пресети.'),
+  [(('Free camera', 'Вільна камера'), 0), (('Freeze time', 'Зупинити час'), 0), (('Hide the interface', 'Сховати інтерфейс'), 0),
+   (('Film grain', 'Зерно плівки'), 0), (('Letterbox', 'Кінорамка'), 0)]),
+ (('Fixes', 'Виправлення'), ("Every patch checks the game's bytes first.", 'Кожна правка спершу звіряє байти гри.'),
+  [(('Crash guards', 'Захист від вильотів'), 1), (('Hang watchdog', 'Захист від зависань'), 1), (('Save backups', 'Резервні копії сейвів'), 1),
+   (('60 limit on 61–139 Hz', 'Ліміт 60 на 61–139 Гц'), 1), (('Safe mode', 'Безпечний режим'), 0)]),
+ (('Mods', 'Моди'), ('A mod higher in the list wins over the ones below.', 'Мод вище в списку перекриває ті, що нижче.'),
+  [(('UA · translation', 'UA · переклад'), 1), (('HD Textures', 'HD Textures'), 1), (('My font', 'Мій шрифт'), 0)]),
+]
+menu_tabs, menu_panels = [], []
+for i, (name, hint, items) in enumerate(MENU):
+    T['menu.t%d' % i] = name
+    T['menu.h%d' % i] = hint
+    menu_tabs.append('<button type="button" role="tab" class="fx-tab%s" data-tab="%d" aria-selected="%s" data-i18n="menu.t%d">%s</button>'
+                     % (' active' if i == 0 else '', i, 'true' if i == 0 else 'false', i, name[0]))
+    rows = []
+    for j, (label, on) in enumerate(items):
+        T['menu.i%d_%d' % (i, j)] = label
+        rows.append('<button type="button" class="fx-item" aria-pressed="%s"><span data-i18n="menu.i%d_%d">%s</span><span class="fx-switch" aria-hidden="true"></span></button>'
+                    % ('true' if on else 'false', i, j, label[0]))
+    menu_panels.append('<div class="fx-panel" role="tabpanel" data-panel="%d"%s><div class="fx-title" data-i18n="menu.t%d">%s</div>%s<div class="fx-hint" data-i18n="menu.h%d">%s</div></div>'
+                       % (i, '' if i == 0 else ' hidden', i, name[0], ''.join(rows), i, hint[0]))
+menu_tabs = '\n          '.join(menu_tabs)
+menu_panels = '\n        '.join(menu_panels)
+
+for k, en, uk in [
+ ('menu.hint', 'Try it: click a section on the left and the switches on the right.', 'Спробуйте: клацніть розділ ліворуч і перемикачі праворуч.'),
+ ('menu.close', 'F10 · close', 'F10 · закрити'),
+ ('bt.perf', 'Performance', 'Продуктивність'),
+ ('bt.perf.d', 'Found with the built-in profiler: every frame the game asked Windows about a gamepad. Physics and timers now run right at any refresh rate.',
+  'Знайдено вбудованим профайлером: гра щокадру питала Windows про ґеймпад. Фізика й таймери тепер працюють правильно на будь-якій частоті.'),
+ ('bt.stab', 'Stability', 'Стабільність'), ('bt.stab.d', 'No crash after cutscenes, no hang after Alt+Tab.', 'Без вильотів після катсцен і зависань після Alt+Tab.'),
+ ('bt.saves', '60 save backups', '60 копій сейвів'), ('bt.saves.d', 'Each named by episode, chapter and play time.', 'Кожна підписана епізодом, розділом і часом гри.'),
+ ('bt.gfx', 'Graphics', 'Графіка'), ('bt.gfx.d', "Your monitor's resolution, HBAO, SMAA, the Xbox 360 look, no flickering far away.", 'Роздільність монітора, HBAO, SMAA, вигляд Xbox 360, без блимання вдалині.'),
+ ('bt.mods', 'Mod manager', 'Менеджер модів'), ('bt.mods.t', 'A translation is just a folder', 'Переклад — це просто тека'),
+ ('bt.mods.d', 'Put the game files into UltimateFix\\mods\\UA\\ and switch the mod on in F10.', 'Покладіть файли гри в UltimateFix\\mods\\UA\\ і ввімкніть мод у F10.'),
+ ('bt.pad', 'DualSense', 'DualSense'), ('bt.pad.d', 'Adaptive triggers for every weapon, without Steam Input.', 'Адаптивні триґери під кожну зброю, без Steam Input.'),
+ ('more.title', 'And also', 'А ще'),
+]:
+    T[k] = (en, uk)

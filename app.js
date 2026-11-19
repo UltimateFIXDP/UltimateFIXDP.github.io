@@ -141,6 +141,21 @@ function setupLightbox() {
   document.addEventListener('keydown', e => { if (e.key === 'Escape' && !box.hidden) close(); });
 }
 
+// The live F10 menu: sections on the left, switches on the right.
+function setupMenu() {
+  const fx = document.getElementById('fx');
+  if (!fx) return;
+  const tabs = [...fx.querySelectorAll('.fx-tab')];
+  const panels = [...fx.querySelectorAll('.fx-panel')];
+  tabs.forEach(tab => tab.addEventListener('click', () => {
+    tabs.forEach(t => { const on = t === tab; t.classList.toggle('active', on); t.setAttribute('aria-selected', on ? 'true' : 'false'); });
+    panels.forEach(p => { p.hidden = p.dataset.panel !== tab.dataset.tab; });
+  }));
+  fx.querySelectorAll('.fx-item').forEach(item => item.addEventListener('click', () => {
+    item.setAttribute('aria-pressed', item.getAttribute('aria-pressed') === 'true' ? 'false' : 'true');
+  }));
+}
+
 function setupScrollTop() {
   const btn = document.getElementById('scroll-top');
   if (!btn) return;
@@ -159,6 +174,7 @@ document.addEventListener('DOMContentLoaded', async () => {
   setupReveal();
   setupActiveNav();
   setupLightbox();
+  setupMenu();
   const [release, downloads] = await Promise.all([fetchLatestRelease(), fetchDownloads()]);
   setDownloadMeta(release);
   setDownloads(downloads);

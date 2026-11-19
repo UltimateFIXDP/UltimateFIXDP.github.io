@@ -31,7 +31,7 @@ page = open(os.path.join(HERE, 'template.html'), encoding='utf-8').read()
 subs = {'desc': html.escape(desc), 'site': g['SITE'], 'repo': g['REPO'], 'ldjson': json.dumps(ld, ensure_ascii=False),
         'gh': g['GH'], 'tg': g['TG'], 'yt': g['YT'], 'st': g['ST'], 'stats': g['stats'], 'news': g['news'], 'before': g['before'],
         'features': g['features'], 'engine': g['engine'], 'shots': g['shots'], 'credits': g['credits'], 'tree': g['tree'],
-        'keys': g['keys'], 'faq': g['faq'], 'stats2': g['stats2'], 'compare': g['compare'], 'news2': g['news2']}
+        'keys': g['keys'], 'faq': g['faq'], 'stats2': g['stats2'], 'compare': g['compare'], 'news2': g['news2'], 'menu_tabs': g['menu_tabs'], 'menu_panels': g['menu_panels']}
 for k, v in subs.items():
     page = page.replace('{{' + k + '}}', v)
 left = re.findall(r'\{\{\w+\}\}', page)
