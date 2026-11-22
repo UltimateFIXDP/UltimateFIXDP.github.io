@@ -23,7 +23,7 @@ desc = ("UltimateFIXDP: the all-in-one fix for Deadly Premonition: The Director'
         "real resolution, HBAO, SMAA, Xbox 360 look, DualSense, full map, mod manager, photo mode. Ukrainian + English.")
 ld = {"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "UltimateFIXDP", "description": desc,
       "applicationCategory": "GameApplication", "operatingSystem": "Windows", "url": g['SITE'],
-      "downloadUrl": g['REPO'] + "/releases/latest", "softwareVersion": "0.7.9", "license": "https://opensource.org/licenses/MIT",
+      "downloadUrl": g['REPO'] + "/releases/latest", "softwareVersion": "0.7.10", "license": "https://opensource.org/licenses/MIT",
       "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"},
       "author": {"@type": "Person", "name": "Dmytro Bidlov", "url": "https://t.me/LittleBitUA"}, "inLanguage": ["uk", "en"]}
 

@@ -147,7 +147,7 @@ tree = ('<pre class="tree"><span class="t-dim">Deadly Premonition The Director\'
 
 # ---- texts of the calm design (2026-11-19) ----
 for k, en, uk in [
- ('hero.pill', 'Version 0.7.9 · a new Mods page and the F10 menu on a gamepad', "Версія 0.7.9 · нова сторінка модів і меню F10 з ґеймпада"),
+ ('hero.pill', 'Version 0.7.10 · the river has water again, York's face in the photo mode', "Версія 0.7.10 · у річці знову є вода, міміка Йорка у фоторежимі"),
  ('hero.title', 'Deadly Premonition,<br>the way it should have been', 'Deadly Premonition,<br>якою вона мала бути'),
  ('hero.lead', "One file in the game folder instead of five mods. Stability, up to 180 FPS, your monitor's resolution and a full settings menu on F10.",
   "Один файл у теці гри замість п'яти модів. Стабільність, до 180 FPS, роздільність вашого монітора й повне меню налаштувань на F10."),
