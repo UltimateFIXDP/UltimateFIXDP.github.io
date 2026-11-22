@@ -39,7 +39,7 @@
       <a class="brand" href="#top"><img src="logo.png" alt="" width="30" height="30"><span>UltimateFIXDP</span></a>
       <nav class="nav" aria-label="Sections">
         <a href="#features" data-i18n="nav.features">Features</a>
-        <a href="#new" data-i18n="nav.new">What's new</a>
+        <a href="#photo" data-i18n="a.nav.photo">Photo mode</a>
         <a href="#mods" data-i18n="nav.mods">Mods</a>
         <a href="#install" data-i18n="nav.install">Install</a>
         <a href="#faq" data-i18n="nav.faq">FAQ</a>
@@ -55,113 +55,80 @@
   </header>
 
   <main>
-    <section class="hero wrap" id="top">
-      <a class="pill" href="#new"><span class="dot"></span><span data-i18n="hero.pill">Version 0.7.13 · residents in the photo mode, play as Emily, a spawner</span><span class="pill-arrow">→</span></a>
-      <h1 data-i18n-html="hero.title">Deadly Premonition,<br>the way it should have been</h1>
-      <p class="lead" data-i18n="hero.lead">One file in the game folder instead of five mods. Stability, up to 180 FPS, your monitor's resolution and a full settings menu on F10.</p>
-      <div class="actions">
+    <section class="hero-a wrap" id="top">
+      <div class="hero-a-frame">
+        <img class="hero-a-img" src="photo-emily.jpg" alt="" width="1600" height="900">
+        <div class="hero-a-shade" aria-hidden="true"></div>
+        <div class="hero-a-text">
+          <a class="pill" href="#new"><span class="dot"></span><span data-i18n="hero.pill">Version 0.7.13 · residents in the photo mode, play as Emily, a spawner</span><span class="pill-arrow">→</span></a>
+          <h1 data-i18n="a.hero.title">Deadly Premonition, the way it should have been on PC</h1>
+          <p class="lead" data-i18n="a.hero.lead">One file in the game folder instead of four fixes. Stability, real resolution, the gamepad, a photo mode and missions of your own. All of it in the menu on F10.</p>
+          <div class="actions">
         <a class="btn-accent" id="download-btn" href="https://github.com/LittleBitUA/UltimateFIXDP/releases/latest">
           <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12m0 0l-5-5m5 5l5-5M5 21h14"/></svg>
           <span data-i18n="hero.dl">Download for Windows</span>
         </a>
-        <a class="btn-line" href="https://github.com/LittleBitUA/UltimateFIXDP" target="_blank" rel="noopener" data-i18n="hero.code">Code on GitHub</a>
-      </div>
-      <p class="meta"><span data-i18n="hero.meta">Steam 1.01b · free, MIT · UA + EN</span> · <span id="download-meta">v0.7.0</span><span id="downloads" hidden> · <span id="downloads-count"></span> <span data-i18n="hero.downloads">downloads</span></span></p>
-    </section>
-
-    <section class="wrap">
-      <div class="fx reveal" id="fx">
-        <div class="fx-bar"><span class="fx-name">UltimateFIXDP</span><span class="fx-close" data-i18n="menu.close">F10 · close</span></div>
-        <div class="fx-body">
-          <div class="fx-tabs" role="tablist" aria-label="Menu sections">
-          <button type="button" role="tab" class="fx-tab active" data-tab="0" aria-selected="true" data-i18n="menu.t0">Screen and graphics</button>
-          <button type="button" role="tab" class="fx-tab" data-tab="1" aria-selected="false" data-i18n="menu.t1">Input</button>
-          <button type="button" role="tab" class="fx-tab" data-tab="2" aria-selected="false" data-i18n="menu.t2">Game and world</button>
-          <button type="button" role="tab" class="fx-tab" data-tab="3" aria-selected="false" data-i18n="menu.t3">Photo mode</button>
-          <button type="button" role="tab" class="fx-tab" data-tab="4" aria-selected="false" data-i18n="menu.t4">Fixes</button>
-          <button type="button" role="tab" class="fx-tab" data-tab="5" aria-selected="false" data-i18n="menu.t5">Mods</button>
+            <a class="btn-line btn-glass" href="#install" data-i18n="a.hero.how">How to install</a>
           </div>
-        <div class="fx-panel" role="tabpanel" data-panel="0"><div class="fx-title" data-i18n="menu.t0">Screen and graphics</div><button type="button" class="fx-item" aria-pressed="true"><span data-i18n="menu.i0_0">Borderless window</span><span class="fx-switch" aria-hidden="true"></span></button><button type="button" class="fx-item" aria-pressed="true"><span data-i18n="menu.i0_1">Your monitor's resolution</span><span class="fx-switch" aria-hidden="true"></span></button><button type="button" class="fx-item" aria-pressed="true"><span data-i18n="menu.i0_2">HBAO ambient occlusion</span><span class="fx-switch" aria-hidden="true"></span></button><button type="button" class="fx-item" aria-pressed="true"><span data-i18n="menu.i0_3">SMAA anti-aliasing</span><span class="fx-switch" aria-hidden="true"></span></button><button type="button" class="fx-item" aria-pressed="false"><span data-i18n="menu.i0_4">Xbox 360 look</span><span class="fx-switch" aria-hidden="true"></span></button><div class="fx-hint" data-i18n="menu.h0">Most items work at once, without restarting the game.</div></div>
-        <div class="fx-panel" role="tabpanel" data-panel="1" hidden><div class="fx-title" data-i18n="menu.t1">Input</div><button type="button" class="fx-item" aria-pressed="true"><span data-i18n="menu.i1_0">DualSense directly</span><span class="fx-switch" aria-hidden="true"></span></button><button type="button" class="fx-item" aria-pressed="true"><span data-i18n="menu.i1_1">Adaptive triggers</span><span class="fx-switch" aria-hidden="true"></span></button><button type="button" class="fx-item" aria-pressed="true"><span data-i18n="menu.i1_2">Aim on L2, fire on R2</span><span class="fx-switch" aria-hidden="true"></span></button><button type="button" class="fx-item" aria-pressed="true"><span data-i18n="menu.i1_3">Quick turn</span><span class="fx-switch" aria-hidden="true"></span></button><button type="button" class="fx-item" aria-pressed="false"><span data-i18n="menu.i1_4">Invert the mouse</span><span class="fx-switch" aria-hidden="true"></span></button><div class="fx-hint" data-i18n="menu.h1">The DualSense works without Steam Input, over USB or Bluetooth.</div></div>
-        <div class="fx-panel" role="tabpanel" data-panel="2" hidden><div class="fx-title" data-i18n="menu.t2">Game and world</div><button type="button" class="fx-item" aria-pressed="true"><span data-i18n="menu.i2_0">Full pause map</span><span class="fx-switch" aria-hidden="true"></span></button><button type="button" class="fx-item" aria-pressed="true"><span data-i18n="menu.i2_1">Waypoint on F7</span><span class="fx-switch" aria-hidden="true"></span></button><button type="button" class="fx-item" aria-pressed="true"><span data-i18n="menu.i2_2">High FPS physics</span><span class="fx-switch" aria-hidden="true"></span></button><button type="button" class="fx-item" aria-pressed="true"><span data-i18n="menu.i2_3">Longer draw distance</span><span class="fx-switch" aria-hidden="true"></span></button><button type="button" class="fx-item" aria-pressed="false"><span data-i18n="menu.i2_4">Pause while the menu is open</span><span class="fx-switch" aria-hidden="true"></span></button><div class="fx-hint" data-i18n="menu.h2">The waypoint becomes the game's own objective: a beacon and minimap arrows.</div></div>
-        <div class="fx-panel" role="tabpanel" data-panel="3" hidden><div class="fx-title" data-i18n="menu.t3">Photo mode</div><button type="button" class="fx-item" aria-pressed="false"><span data-i18n="menu.i3_0">Free camera</span><span class="fx-switch" aria-hidden="true"></span></button><button type="button" class="fx-item" aria-pressed="false"><span data-i18n="menu.i3_1">Freeze time</span><span class="fx-switch" aria-hidden="true"></span></button><button type="button" class="fx-item" aria-pressed="false"><span data-i18n="menu.i3_2">Hide the interface</span><span class="fx-switch" aria-hidden="true"></span></button><button type="button" class="fx-item" aria-pressed="false"><span data-i18n="menu.i3_3">Film grain</span><span class="fx-switch" aria-hidden="true"></span></button><button type="button" class="fx-item" aria-pressed="false"><span data-i18n="menu.i3_4">Letterbox</span><span class="fx-switch" aria-hidden="true"></span></button><div class="fx-hint" data-i18n="menu.h3">13 filters and four presets of your own.</div></div>
-        <div class="fx-panel" role="tabpanel" data-panel="4" hidden><div class="fx-title" data-i18n="menu.t4">Fixes</div><button type="button" class="fx-item" aria-pressed="true"><span data-i18n="menu.i4_0">Crash guards</span><span class="fx-switch" aria-hidden="true"></span></button><button type="button" class="fx-item" aria-pressed="true"><span data-i18n="menu.i4_1">Hang watchdog</span><span class="fx-switch" aria-hidden="true"></span></button><button type="button" class="fx-item" aria-pressed="true"><span data-i18n="menu.i4_2">Save backups</span><span class="fx-switch" aria-hidden="true"></span></button><button type="button" class="fx-item" aria-pressed="true"><span data-i18n="menu.i4_3">60 limit on 61–139 Hz</span><span class="fx-switch" aria-hidden="true"></span></button><button type="button" class="fx-item" aria-pressed="false"><span data-i18n="menu.i4_4">Safe mode</span><span class="fx-switch" aria-hidden="true"></span></button><div class="fx-hint" data-i18n="menu.h4">Every patch checks the game's bytes first.</div></div>
-        <div class="fx-panel" role="tabpanel" data-panel="5" hidden><div class="fx-title" data-i18n="menu.t5">Mods</div><button type="button" class="fx-item" aria-pressed="true"><span data-i18n="menu.i5_0">UA · translation</span><span class="fx-switch" aria-hidden="true"></span></button><button type="button" class="fx-item" aria-pressed="true"><span data-i18n="menu.i5_1">HD Textures</span><span class="fx-switch" aria-hidden="true"></span></button><button type="button" class="fx-item" aria-pressed="false"><span data-i18n="menu.i5_2">My font</span><span class="fx-switch" aria-hidden="true"></span></button><div class="fx-hint" data-i18n="menu.h5">A mod higher in the list wins over the ones below.</div></div>
+          <p class="meta"><span data-i18n="hero.meta">Steam 1.01b · free, MIT · UA + EN</span> · <span id="download-meta">v0.7.0</span><span id="downloads" hidden> · <span id="downloads-count"></span> <span data-i18n="hero.downloads">downloads</span></span></p>
+          <p class="meta" data-i18n="a.hero.shot">The picture was made in the mod's photo mode.</p>
         </div>
       </div>
-      <p class="fx-try" data-i18n="menu.hint">Try it: click a section on the left and the switches on the right.</p>
     </section>
 
-    <section class="wrap stats2" aria-label="In numbers">
-      <div class="stat2 reveal"><div class="stat2-num">180 FPS</div><div class="stat2-label" data-i18n="s2.fps">and the car and timers run right</div></div>
-      <div class="stat2 reveal"><div class="stat2-num">1 DLL</div><div class="stat2-label" data-i18n="s2.dll">instead of DPfix and four other fixes</div></div>
-      <div class="stat2 reveal"><div class="stat2-num">60</div><div class="stat2-label" data-i18n="s2.saves">named save backups</div></div>
-      <div class="stat2 reveal"><div class="stat2-num">0</div><div class="stat2-label" data-i18n="s2.files">game files changed on disk</div></div>
+    <section class="wrap stats-a" aria-label="In numbers">
+      <div class="reveal"><div class="stats-a-n">45 → 180</div><p data-i18n="a.st.1">frames a second in our test on a PC where the game sat at 45</p></div>
+      <div class="reveal"><div class="stats-a-n">49</div><p data-i18n="a.st.2">residents of Greenvale can be put into the picture in the photo mode</p></div>
+      <div class="reveal"><div class="stats-a-n">60</div><p data-i18n="a.st.3">save backups named by episode and play time</p></div>
+      <div class="reveal"><div class="stats-a-n" data-i18n="a.st.4n">1 file</div><p data-i18n="a.st.4">no installer: copy it into the game folder and press F10</p></div>
     </section>
 
     <section class="wrap block" id="features">
       <div class="head">
-        <h2 data-i18n="f2.title">Everything the PC version was missing</h2>
-        <p data-i18n="f2.lead">Every fix comes from taking the game's code apart and comparing it with the Xbox 360 original.</p>
+        <h2 data-i18n="a.f.title">Everything the PC version was missing</h2>
+        <p data-i18n="a.f.lead">Every fix comes from taking the game's code apart and comparing it with the Xbox 360 original.</p>
       </div>
-      <div class="bento">
-        <article class="tile tile-wide tile-perf reveal">
-          <div class="tile-kicker" data-i18n="bt.perf">Performance</div>
-          <div>
-            <div class="perf"><span class="perf-old">45</span><span class="perf-arrow">→</span><span class="perf-new">180</span><span class="perf-unit">FPS</span></div>
-            <p data-i18n="bt.perf.d">Found with the built-in profiler: every frame the game asked Windows about a gamepad. Physics and timers now run right at any refresh rate.</p>
-          </div>
-        </article>
-        <article class="tile reveal">
-          <svg class="tile-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/></svg>
-          <div><h3 data-i18n="bt.stab">Stability</h3><p data-i18n="bt.stab.d">No crash after cutscenes, no hang after Alt+Tab.</p></div>
-        </article>
-        <article class="tile reveal">
-          <svg class="tile-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"/><path d="M17 21v-8H7v8M7 3v5h8"/></svg>
-          <div><h3 data-i18n="bt.saves">60 save backups</h3><p data-i18n="bt.saves.d">Each named by episode, chapter and play time.</p></div>
-        </article>
-        <article class="tile tile-img reveal">
-          <a class="zoom" href="screenshots/menu-graphics.jpg"><img src="screenshots/menu-graphics.jpg" alt="" width="1920" height="1080" loading="lazy"></a>
-          <div class="tile-pad"><h3 data-i18n="bt.gfx">Graphics</h3><p data-i18n="bt.gfx.d">Your monitor's resolution, HBAO, SMAA, the Xbox 360 look, no flickering far away.</p></div>
-        </article>
-        <article class="tile tile-wide tile-mods reveal">
-          <div class="tile-mods-text">
-            <div class="tile-kicker" data-i18n="bt.mods">Mod manager</div>
-            <h3 class="tile-big" data-i18n="bt.mods.t">A translation is just a folder</h3>
-            <p data-i18n="bt.mods.d">Put the game files into UltimateFix\mods\UA\ and switch the mod on in F10.</p>
-          </div>
-          <pre class="tile-tree">mods\
-└─ <span class="t-red">UA\</span>
-   ├─ fontwide.xpc
-   └─ mes_all.mes</pre>
-        </article>
-        <article class="tile reveal">
-          <svg class="tile-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="7" width="20" height="10" rx="5"/><path d="M7 10v4M5 12h4"/></svg>
-          <div><h3 data-i18n="bt.pad">DualSense</h3><p data-i18n="bt.pad.d">Adaptive triggers for every weapon, without Steam Input.</p></div>
-        </article>
+      <div class="fa-grid">
+        <article class="fa-cell reveal"><span class="fa-num">01</span><h3 data-i18n="a.f1.t">Stability and speed</h3><p data-i18n="a.f1.d">The crash after cutscenes, the Alt+Tab hang and the "45 frames" are fixed. Physics and timers run right at 120–180 FPS.</p></article>
+        <article class="fa-cell reveal"><span class="fa-num">02</span><h3 data-i18n="a.f2.t">Picture</h3><p data-i18n="a.f2.d">Your monitor's resolution instead of 1280×720, supersampling, HBAO, SMAA, the Xbox 360 look. The river has water again.</p></article>
+        <article class="fa-cell reveal"><span class="fa-num">03</span><h3 data-i18n="a.f3.t">Controls</h3><p data-i18n="a.f3.d">A DualSense without Steam Input with adaptive triggers, the rumble the port never sent, aim on L2 and fire on R2.</p></article>
+        <article class="fa-cell reveal"><span class="fa-num">04</span><h3 data-i18n="a.f4.t">Map, story and residents</h3><p data-i18n="a.f4.d">The full pause map, waypoints on F7, the story's current goal and the timetable of every resident.</p></article>
+        <article class="fa-cell reveal"><span class="fa-num">05</span><h3 data-i18n="a.f5.t">Cheats and a spawner</h3><p data-i18n="a.f5.d">Money, time, weather, flying. Play as other characters, 16 cars and any item by name.</p></article>
+        <article class="fa-cell reveal"><span class="fa-num">06</span><h3 data-i18n="a.f6.t">Mods and updates</h3><p data-i18n="a.f6.d">A mod manager with pictures and descriptions. The mod installs a new version itself: F9 on the start card.</p></article>
       </div>
-      <h3 class="more-title" data-i18n="more.title">And also</h3>
-      <div class="more"><div class="more-item"><h3 data-i18n="f.x360.t">Xbox 360 look</h3><p data-i18n-html="f.x360.d">The console's colour grading and TV gamma, compared with our own Xbox 360 recompilation, on top of the PC picture.</p></div><div class="more-item"><h3 data-i18n="f.map.t">Map and waypoints</h3><p data-i18n-html="f.map.d">The full pause map with all 64 tiles, north up. F7 sets a waypoint that becomes the game's own objective, with its beacon and minimap arrows.</p></div><div class="more-item"><h3 data-i18n="f.story.t">Story and residents</h3><p data-i18n-html="f.story.d">Where the story stands, side quests and where to go next by name. The live timetable of every resident of Greenvale.</p></div><div class="more-item"><h3 data-i18n="f.photo.t">Photo mode</h3><p data-i18n-html="f.photo.d">Free camera, frozen time, 13 filters with grain, sepia, aberration and letterbox, your own presets, costumes, poses, PNG screenshots.</p></div><div class="more-item"><h3 data-i18n="f.tools.t">Tools</h3><p data-i18n-html="f.tools.d">Frame statistics, a built-in profiler that found the 45 FPS bug, cheats (money, time, weather, ammo), mouse sensitivity and inversion.</p></div><div class="more-item"><h3 data-i18n="f.lang.t">Two languages</h3><p data-i18n-html="f.lang.d">Ukrainian and English, switched in the menu. One DLL, no installer: press F10 in game and everything is there.</p></div></div>
+    </section>
+
+    <section class="wrap block split-a" id="photo">
+      <div class="split-a-text reveal">
+        <div class="eyebrow" data-i18n="a.p.eyebrow">Photo mode</div>
+        <h2 data-i18n="a.p.title">A whole scene, not only York</h2>
+        <p class="lead-left" data-i18n="a.p.lead">Put any resident next to York, turn them, give them a pose and an expression. The camera flies free and time stands still.</p>
+        <ul class="ticks">
+          <li><span data-i18n="a.p.1">13 filters, grain, letterbox, your own presets</span></li>
+          <li><span data-i18n="a.p.2">A face from named parts: emotion, brows, lids, mouth</span></li>
+          <li><span data-i18n="a.p.3">30 suits, worn as you scroll</span></li>
+        </ul>
+      </div>
+      <figure class="split-a-fig reveal">
+        <a href="screenshots/menu-graphics.jpg" class="zoom"><img src="screenshots/menu-graphics.jpg" alt="" loading="lazy" width="1600" height="900"></a>
+        <figcaption data-i18n="a.p.cap">The menu on F10: in Ukrainian and English, on a gamepad too.</figcaption>
+      </figure>
     </section>
 
     <section class="wrap block" id="new">
-      <div class="head">
-        <h2 data-i18n="n2.title">What's new in 0.7.0</h2>
+      <div class="panel-a reveal">
+        <div class="panel-a-text">
+          <div class="eyebrow" data-i18n="a.e.eyebrow">New</div>
+          <h2 data-i18n="a.e.title">Mission editor</h2>
+          <p data-i18n="a.e.lead">A first version, experimental. A character, its lines, a choice of two answers and an item as a reward. The talk runs in the game's own dialogue mode, with your text.</p>
+        </div>
+        <ol class="steps-a">
+          <li><span class="steps-a-n">1</span><span data-i18n="a.e.1">Pick a resident and stand where they should stand.</span></li>
+          <li><span class="steps-a-n">2</span><span data-i18n="a.e.2">Write the lines in the mission's file with plain Notepad.</span></li>
+          <li><span class="steps-a-n">3</span><span data-i18n="a.e.3">Press "Run the mission now" and walk up to the character.</span></li>
+        </ol>
       </div>
-      <ul class="news2-list">
-      <li class="news2 reveal"><h3 data-i18n="n1.t">Mod manager</h3><p data-i18n-html="n1.d">Folders in <code>UltimateFix\mods\</code>, on/off and order in F10. Translations, texture packs, any game file by its name.</p></li>
-      <li class="news2 reveal"><h3 data-i18n="n2.t">Far textures fixed</h3><p data-i18n-html="n2.d">Depth precision, mipmaps for textures without them, steadier far shadows.</p></li>
-      <li class="news2 reveal"><h3 data-i18n="n3.t">HBAO · SMAA · Xbox 360 look</h3><p data-i18n-html="n3.d">Horizon-based occlusion with a depth-aware blur, SMAA 1x, the console's grading and gamma.</p></li>
-      <li class="news2 reveal"><h3 data-i18n="n4.t">High FPS physics</h3><p data-i18n-html="n4.d">The car and about 80 timers of the game run right at 120–180 FPS. FPS unlocked by default.</p></li>
-      <li class="news2 reveal"><h3 data-i18n="n5.t">Story and residents</h3><p data-i18n-html="n5.d">Episode, chapter, side quests, the next destination by name; every resident's timetable.</p></li>
-      <li class="news2 reveal"><h3 data-i18n="n6.t">Camera and mouse</h3><p data-i18n-html="n6.d">Field of view in play, the Xbox 360 quick turn, mouse speed 25–400 % and inversion per axis.</p></li>
-      <li class="news2 reveal"><h3 data-i18n="n7.t">Photo mode presets</h3><p data-i18n-html="n7.d">13 filters, grain, sepia, aberration, letterbox and four presets of your own.</p></li>
-      <li class="news2 reveal"><h3 data-i18n="n8.t">Stability and saves</h3><p data-i18n-html="n8.d">No endless hang on a NaN angle, audio kept in memory, 60 backups named by episode and chapter.</p></li>
-      </ul>
-      <p class="note" data-i18n-html="new.known"><strong>Known issues:</strong> a light strip along some wall corners with HBAO, doubled depth-of-field edges at render scale 300 %, the X on the pause map drifts while the map pans.</p>
-      <p><a class="link" href="https://github.com/LittleBitUA/UltimateFIXDP/releases/latest" target="_blank" rel="noopener" data-i18n="new.all">All changes on GitHub →</a></p>
     </section>
-
 
     <section class="wrap block" id="engine">
       <div class="head">
@@ -195,7 +162,6 @@
       </article>
       </div>
     </section>
-
     <section class="wrap block" id="mods">
       <div class="split split-center">
         <div class="split-side">
@@ -221,31 +187,6 @@
             └─ 1a2b3c4d.dds</pre></div>
       </div>
     </section>
-
-    <section class="wrap block" id="shots">
-      <div class="head">
-        <h2 data-i18n="sh2.title">One menu for everything</h2>
-      </div>
-      <div class="shots">
-      <figure class="shot glass-card reveal">
-        <a href="screenshots/menu-graphics.jpg" class="zoom"><img src="screenshots/menu-graphics.jpg" alt="Screen and graphics" loading="lazy"></a>
-        <figcaption data-i18n-html="s.gfx">Screen and graphics</figcaption>
-      </figure>
-      <figure class="shot glass-card reveal">
-        <a href="screenshots/menu-controls.jpg" class="zoom"><img src="screenshots/menu-controls.jpg" alt="Controls" loading="lazy"></a>
-        <figcaption data-i18n-html="s.ctl">Controls</figcaption>
-      </figure>
-      <figure class="shot glass-card reveal">
-        <a href="screenshots/menu-world.jpg" class="zoom"><img src="screenshots/menu-world.jpg" alt="Game and world" loading="lazy"></a>
-        <figcaption data-i18n-html="s.world">Game and world</figcaption>
-      </figure>
-      <figure class="shot glass-card reveal">
-        <a href="screenshots/menu-fixes.jpg" class="zoom"><img src="screenshots/menu-fixes.jpg" alt="Fixes" loading="lazy"></a>
-        <figcaption data-i18n-html="s.fix">Fixes</figcaption>
-      </figure>
-      </div>
-    </section>
-
     <section class="wrap block" id="install">
       <div class="head">
         <h2 data-i18n="i2.title">Install in a minute</h2>
@@ -257,7 +198,6 @@
       </ol>
       <p class="note" data-i18n="install.note">Steam version 1.01b. Do not combine with DPfix, ZachFix or DPStabilityFix: UltimateFIXDP replaces them. For a DualSense turn Steam Input off for the game.</p>
     </section>
-
     <section class="wrap block" id="keys">
       <div class="head">
         <h2 data-i18n="k2.title">Keys</h2>
@@ -273,7 +213,6 @@
       <div class="key-row"><span class="keys"><kbd>F11</kbd></span><span class="key-what" data-i18n="k.f11">Screenshot (PNG, without the menu)</span></div>
       </div>
     </section>
-
     <section class="wrap block" id="faq">
       <div class="split">
         <div class="split-side"><h2 data-i18n="q2.title">Questions</h2></div>
@@ -288,7 +227,6 @@
         </div>
       </div>
     </section>
-
     <section class="wrap block" id="credits">
       <div class="head">
         <h2 data-i18n="cr2.title">Thanks to</h2>
@@ -328,7 +266,6 @@
       </div>
       <p class="note" data-i18n-html="credits.testers">🧪 Testers: <strong>Gold flin</strong> and <strong>Tree Fan</strong>. Thank you for playing the unfinished builds.</p>
     </section>
-
     <section class="wrap block">
       <div class="cta reveal">
         <h2 data-i18n="cta2.title">Greenvale is waiting</h2>
