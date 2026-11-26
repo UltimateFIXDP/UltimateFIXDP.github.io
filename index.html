@@ -38,7 +38,9 @@
     <div class="wrap top-row">
       <a class="brand" href="#top"><img src="logo.png" alt="" width="30" height="30"><span>UltimateFIXDP</span></a>
       <nav class="nav" aria-label="Sections">
+        <a href="#news" data-i18n="nav.new">What's new</a>
         <a href="#features" data-i18n="nav.features">Features</a>
+        <a href="#mp" data-i18n="nav.mp">Multiplayer</a>
         <a href="#photo" data-i18n="a.nav.photo">Photo mode</a>
         <a href="#mods" data-i18n="nav.mods">Mods</a>
         <a href="#install" data-i18n="nav.install">Install</a>
@@ -61,8 +63,9 @@
         <div class="hero-a-shade" aria-hidden="true"></div>
         <div class="hero-a-text">
           <a class="pill" href="https://github.com/LittleBitUA/UltimateFIXDP/releases/latest"><span class="dot"></span><span data-i18n="hero.pill">Version 0.7.19 · fixes from players' reports</span><span class="pill-arrow">→</span></a>
+          <img class="hero-logo" src="logo-wide.png" alt="Deadly Premonition UltimateFix" width="1100" height="315">
           <h1 data-i18n="a.hero.title">Deadly Premonition, the way it should have been on PC</h1>
-          <p class="lead" data-i18n="a.hero.lead">One file in the game folder instead of four fixes. Stability, real resolution, the gamepad, a photo mode and missions of your own. All of it in the menu on F10.</p>
+          <p class="lead" data-i18n="a.hero.lead">One file in the game folder instead of four fixes. Stability, real resolution, the gamepad, a photo mode, multiplayer for two and quests of your own. All of it in the menu on F10.</p>
           <div class="actions">
         <a class="btn-accent" id="download-btn" href="https://github.com/LittleBitUA/UltimateFIXDP/releases/latest">
           <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12m0 0l-5-5m5 5l5-5M5 21h14"/></svg>
@@ -78,9 +81,24 @@
 
     <section class="wrap stats-a" aria-label="In numbers">
       <div class="reveal"><div class="stats-a-n">45 → 180</div><p data-i18n="a.st.1">frames a second in our test on a PC where the game sat at 45</p></div>
-      <div class="reveal"><div class="stats-a-n">49</div><p data-i18n="a.st.2">residents of Greenvale can be put into the picture in the photo mode</p></div>
-      <div class="reveal"><div class="stats-a-n">60</div><p data-i18n="a.st.3">save backups named by episode and play time</p></div>
+      <div class="reveal"><div class="stats-a-n" data-i18n="a.st.2n">11.3 → 1.7 s</div><p data-i18n="a.st.2">the same loading screen before and after version 0.7.18, from a player's log</p></div>
+      <div class="reveal"><div class="stats-a-n" data-i18n="a.st.3n">2 players</div><p data-i18n="a.st.3">in one Greenvale: your own server or joining by address</p></div>
       <div class="reveal"><div class="stats-a-n" data-i18n="a.st.4n">1 file</div><p data-i18n="a.st.4">no installer: copy it into the game folder and press F10</p></div>
+    </section>
+
+    <section class="wrap block" id="news">
+      <div class="news-head">
+        <div class="head">
+          <div class="eyebrow" data-i18n="nw.eyebrow">What's new</div>
+          <h2 data-i18n="nw.title">Three versions in four days</h2>
+        </div>
+        <a class="news-all" href="https://github.com/LittleBitUA/UltimateFIXDP/releases" target="_blank" rel="noopener" data-i18n="nw.all">All versions on GitHub →</a>
+      </div>
+      <div class="news-a">
+        <article class="news-a-card news-a-latest reveal"><div class="news-a-top"><span class="news-a-v">0.7.19</span><span class="news-a-tag" data-i18n="nw.latest">latest</span></div><p data-i18n="nw.19.t">Fixes from players' reports.</p><ul><li data-i18n="nw.19.1">A hang after the video device is lost</li><li data-i18n="nw.19.2">A crash after a very long session</li><li data-i18n="nw.19.3">Doors of buildings seen from afar</li><li data-i18n="nw.19.4">The map's zoom gauge, the colour of your own waypoint, the FPS panel in any corner</li></ul></article>
+        <article class="news-a-card reveal"><div class="news-a-top"><span class="news-a-v">0.7.18</span></div><p data-i18n="nw.18.t">Shorter loading screens.</p><ul><li data-i18n="nw.18.1">The mod builds the textures' mipmaps itself in memory, without waiting for the frame</li><li data-i18n="nw.18.2">The pause map shows up at once</li><li data-i18n="nw.18.3">A crash after the window peek</li></ul></article>
+        <article class="news-a-card reveal"><div class="news-a-top"><span class="news-a-v">0.7.17</span></div><p data-i18n="nw.17.t">The prologue's smoke and multiplayer.</p><ul><li data-i18n="nw.17.1">The prologue's smoke is smoke again, not a black blob</li><li data-i18n="nw.17.2">Multiplayer for two, chat, a name over the head</li><li data-i18n="nw.17.3">The Fix texture mod by Darkanioid1997 included</li></ul></article>
+      </div>
     </section>
 
     <section class="wrap block" id="features">
@@ -89,12 +107,40 @@
         <p data-i18n="a.f.lead">Every fix comes from taking the game's code apart and comparing it with the Xbox 360 original.</p>
       </div>
       <div class="fa-grid">
-        <article class="fa-cell reveal"><span class="fa-num">01</span><h3 data-i18n="a.f1.t">Stability and speed</h3><p data-i18n="a.f1.d">The crash after cutscenes, the Alt+Tab hang and the "45 frames" are fixed. Physics and timers run right at 120–180 FPS.</p></article>
-        <article class="fa-cell reveal"><span class="fa-num">02</span><h3 data-i18n="a.f2.t">Picture</h3><p data-i18n="a.f2.d">Your monitor's resolution instead of 1280×720, supersampling, HBAO, SMAA, the Xbox 360 look. The river has water again.</p></article>
+        <article class="fa-cell reveal"><span class="fa-num">01</span><h3 data-i18n="a.f1.t">Stability and speed</h3><p data-i18n="a.f1.d">The crash after cutscenes, the Alt+Tab hang and the "45 frames" are fixed. Loading screens are several times shorter. Physics and timers run right at 120–180 FPS.</p></article>
+        <article class="fa-cell reveal"><span class="fa-num">02</span><h3 data-i18n="a.f2.t">Picture</h3><p data-i18n="a.f2.d">Your monitor's resolution instead of 1280×720, supersampling, HBAO, SMAA, the Xbox 360 look. The river has water again, and the prologue's smoke is smoke again.</p></article>
         <article class="fa-cell reveal"><span class="fa-num">03</span><h3 data-i18n="a.f3.t">Controls</h3><p data-i18n="a.f3.d">A DualSense without Steam Input with adaptive triggers, the rumble the port never sent, aim on L2 and fire on R2.</p></article>
         <article class="fa-cell reveal"><span class="fa-num">04</span><h3 data-i18n="a.f4.t">Map, story and residents</h3><p data-i18n="a.f4.d">The full pause map, waypoints on F7, the story's current goal and the timetable of every resident.</p></article>
         <article class="fa-cell reveal"><span class="fa-num">05</span><h3 data-i18n="a.f5.t">Cheats and a spawner</h3><p data-i18n="a.f5.d">Money, time, weather, flying. Play as other characters, 16 cars and any item by name.</p></article>
-        <article class="fa-cell reveal"><span class="fa-num">06</span><h3 data-i18n="a.f6.t">Mods and updates</h3><p data-i18n="a.f6.d">A mod manager with pictures and descriptions. The mod installs a new version itself: F9 on the start card.</p></article>
+        <article class="fa-cell reveal"><span class="fa-num">06</span><h3 data-i18n="a.f6.t">Mods and updates</h3><p data-i18n="a.f6.d">A mod manager with pictures and descriptions, the Fix texture mod included. The mod installs a new version itself: F9 on the start card.</p></article>
+      </div>
+    </section>
+
+    <section class="wrap block" id="mp">
+      <div class="panel-a reveal">
+        <div class="panel-a-text">
+          <div class="eyebrow" data-i18n="mp.eyebrow">Multiplayer · experimental</div>
+          <h2 data-i18n="mp.title">Greenvale for two</h2>
+          <p data-i18n="mp.lead">Each of you plays your own game with your own story, and the other player is seen as a second York: with a name over the head, in his suit, with the weapon in his hand and at the wheel of his car.</p>
+          <ul class="ticks">
+            <li><span data-i18n="mp.1">Your own server, joining by address, or the list of servers in your network</span></li>
+            <li><span data-i18n="mp.2">Chat on the T key with commands, the player's mark on the pause map</span></li>
+            <li><span data-i18n="mp.3">Aiming, the flash and the sound of shots; they hurt nobody</span></li>
+          </ul>
+          <p class="mp-note" data-i18n="mp.note">A first version: two players, no shared cars, enemies or time. Between two computers it is still being tried by players.</p>
+        </div>
+        <div class="mp-mock" aria-hidden="true">
+          <div class="mp-mock-title" data-i18n="nav.mp">Multiplayer</div>
+          <div class="mp-mock-status"><span class="mp-dot"></span><span data-i18n="mp.m.status">Playing with Emily (192.168.1.24). Chat: the T key.</span></div>
+          <div class="mp-mock-fields">
+            <div><div class="mp-mock-label" data-i18n="mp.m.name">Your name</div><div class="mp-mock-field">York</div></div>
+            <div><div class="mp-mock-label" data-i18n="mp.m.server">Server name</div><div class="mp-mock-field">Greenvale</div></div>
+          </div>
+          <div class="mp-mock-label" data-i18n="mp.m.list">Servers</div>
+          <div class="mp-mock-row mp-mock-sel"><strong>Greenvale</strong><span>Emily · 192.168.1.24</span><span data-i18n="mp.m.full">2 of 2</span></div>
+          <div class="mp-mock-row"><strong>Red Room</strong><span>George · 10.0.0.7</span><span class="mp-free" data-i18n="mp.m.free">1 of 2</span></div>
+          <div class="mp-mock-chat"><span class="mp-chat-in" data-i18n="mp.m.c1">Emily: meet me at the diner</span><span data-i18n="mp.m.c2">York: on my way</span></div>
+        </div>
       </div>
     </section>
 
@@ -118,14 +164,14 @@
     <section class="wrap block" id="new">
       <div class="panel-a reveal">
         <div class="panel-a-text">
-          <div class="eyebrow" data-i18n="a.e.eyebrow">New</div>
-          <h2 data-i18n="a.e.title">Mission editor</h2>
-          <p data-i18n="a.e.lead">A first version, experimental. A character, its lines, a choice of two answers and an item as a reward. The talk runs in the game's own dialogue mode, with your text.</p>
+          <div class="eyebrow" data-i18n="a.e.eyebrow">Quest editor · experimental</div>
+          <h2 data-i18n="a.e.title">Quests of your own, in a browser</h2>
+          <p data-i18n="a.e.lead">A page beside the running game: the steps on the left, the game's own map in the middle, the properties on the right. The talk runs in the game's own dialogue mode, with your text.</p>
         </div>
         <ol class="steps-a">
-          <li><span class="steps-a-n">1</span><span data-i18n="a.e.1">Pick a resident and stand where they should stand.</span></li>
-          <li><span class="steps-a-n">2</span><span data-i18n="a.e.2">Write the lines in the mission's file with plain Notepad.</span></li>
-          <li><span class="steps-a-n">3</span><span data-i18n="a.e.3">Press "Run the mission now" and walk up to the character.</span></li>
+          <li><span class="steps-a-n">1</span><span data-i18n="a.e.1">Put together up to 16 steps: a talk with a choice, a line, a place to reach, an hour to wait for.</span></li>
+          <li><span class="steps-a-n">2</span><span data-i18n="a.e.2">Drag the marks of characters and cars over the map of Greenvale, link the steps in the Nodes view.</span></li>
+          <li><span class="steps-a-n">3</span><span data-i18n="a.e.3">Press Run and walk up to the character in the game. The reward: an item and money.</span></li>
         </ol>
       </div>
     </section>
@@ -136,6 +182,18 @@
         <p data-i18n="engine.lead">Every fix comes from taking the game's code apart and comparing the PC port with the Xbox 360 original.</p>
       </div>
       <div class="cards cards-3">
+      <article class="glass-card feature engine reveal">
+        <h3 data-i18n-html="e.smoke.t">The black blob in the prologue</h3>
+        <p data-i18n-html="e.smoke.d">On the console the smoke is multiplied by a mask and comes out in wisps. The port draws it as two black sheets that add up to a blob. The mod makes the smoke sheet again; the Xbox 360 texture was found by Darkanioid1997.</p>
+      </article>
+      <article class="glass-card feature engine reveal">
+        <h3 data-i18n-html="e.load.t">Long loading screens</h3>
+        <p data-i18n-html="e.load.d">The smaller copies of textures were made level by level through the video card, each step waiting for the frame. The mod now builds them itself in memory.</p>
+      </article>
+      <article class="glass-card feature engine reveal">
+        <h3 data-i18n-html="e.reset.t">The endless device reset</h3>
+        <p data-i18n-html="e.reset.d">After the video device is lost the game tries to reset it every 50 ms forever if anything was left on it. The mod now releases its own before every try.</p>
+      </article>
       <article class="glass-card feature engine reveal">
         <h3 data-i18n-html="e.time.t">The "only a reboot helps" slowdown</h3>
         <p data-i18n-html="e.time.d">The game counted time from the Windows uptime in single-precision floats: after days without a reboot the frame time lost precision. The mod hands it a counter that starts with the game.</p>
@@ -227,12 +285,26 @@
         </div>
       </div>
     </section>
+    <section class="wrap block" id="reports">
+      <div class="panel-a reports-a reveal">
+        <div class="panel-a-text">
+          <h2 data-i18n="rp.title">Found a bug? It gets read</h2>
+          <p data-i18n="rp.text">The mod writes a readable log and a dump when the game crashes or hangs. From such reports seven problems were fixed in versions 0.7.18 and 0.7.19, and each got an answer explaining the cause.</p>
+        </div>
+        <a class="btn-line" href="https://github.com/LittleBitUA/UltimateFIXDP/issues" target="_blank" rel="noopener" data-i18n="rp.btn">Report a bug</a>
+      </div>
+    </section>
     <section class="wrap block" id="credits">
       <div class="head">
         <h2 data-i18n="cr2.title">Thanks to</h2>
         <p data-i18n="credits.lead">The code is our own (MIT). The ideas, facts and addresses came from earlier community work.</p>
       </div>
       <div class="cards cards-3 credits">
+      <div class="glass-card credit reveal">
+        <h3>Fix</h3>
+        <p class="credit-by">Darkanioid1997</p>
+        <p data-i18n-html="c.dark">The prologue's smoke texture and the Greenvale signs from the Xbox 360 version</p>
+      </div>
       <a class="glass-card credit reveal" href="https://github.com/h714je/ZachFix" target="_blank" rel="noopener">
         <h3>ZachFix</h3>
         <p class="credit-by">h714je</p>
@@ -264,7 +336,7 @@
         <p data-i18n-html="c.kenney">Gamepad button icons (CC0)</p>
       </a>
       </div>
-      <p class="note" data-i18n-html="credits.testers">🧪 Testers: <strong>Gold flin</strong> and <strong>Tree Fan</strong>. Thank you for playing the unfinished builds.</p>
+      <p class="note" data-i18n-html="credits.testers">Testers: <strong>Gold flin</strong>, <strong>Tree Fan</strong>, <strong>EliParker</strong> and everyone who sent a report with a log. Thank you for playing the unfinished builds.</p>
     </section>
     <section class="wrap block">
       <div class="cta reveal">
